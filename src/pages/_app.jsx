@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { ChakraProvider, CSSReset } from "@chakra-ui/react";
+import React, { Component, useEffect } from "react";
+import { ChakraProvider, CSSReset, useColorMode } from "@chakra-ui/react";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import customTheme from "../../public/assets/js/theme";
@@ -40,9 +40,10 @@ export default class MyApp extends App {
     //       this.setState({ loading: false })
     //   );
 
+    
     return (
       <ChakraProvider theme={customTheme}>
-        <Head>
+        {/* <Head>
           <script type="text/javascript" src="/assets/js/chatbot.js"></script>
           
           <link
@@ -50,7 +51,7 @@ export default class MyApp extends App {
             href="/assets/images/icons/favicon/bg.ico"
             type="image/x-icon"
           />
-        </Head>
+        </Head> */}
         <CSSReset />
         <Header></Header>
         <Component {...pageProps} />

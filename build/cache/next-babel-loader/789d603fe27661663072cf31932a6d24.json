@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const ICONS = [{\n  id: 1,\n  image: \"assets/shapes/Phone.svg\",\n  imageAlt: \"Company Logo\"\n}, {\n  id: 2,\n  image: \"assets/shapes/Mail.svg\",\n  imageAlt: \"Company Logo\"\n}, {\n  id: 3,\n  image: \"assets/shapes/Location.svg\",\n  imageAlt: \"Company Logo\"\n}];","map":null,"metadata":{},"sourceType":"module"}

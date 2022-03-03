@@ -302,7 +302,6 @@ class Landing extends Component {
             </Box>
           </Fade>
         </Section>
-
         <Section py={16}>
           <Title>Our Goals + Our Approach + Our Results  = Our Success Story</Title>
           <Description>We focus on being the trusted and reliable partner for every business that we associate with, accounting for our enthusiasm and professionalism</Description>

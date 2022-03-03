@@ -1,9 +1,13 @@
-import { theme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 
-export default {
-    ...theme,
+const config = {
+    initialColorMode: 'light',
+    useSystemColorMode: false,
+  }
+  
+const theme = extendTheme({
+    config,
     colors: {
-        ...theme.colors,
         transparent: "transparent",
         primary: {
             500: "#F32222"
@@ -21,4 +25,7 @@ export default {
         }
         
     },
-  };
+    
+  }) ;
+
+  export default theme;

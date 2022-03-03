@@ -13,7 +13,7 @@ import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    Stack, Link, Heading, Grid, Divider, useDisclosure, Tabs, TabList, TabPanels, Tab, TabPanel
+    Stack, Link, Heading, Grid, Divider, useDisclosure, Tabs, TabList, TabPanels, Tab, TabPanel, useColorMode
 } from '@chakra-ui/react'
 import services from "../../database/services"
 import { FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase, FaSearch } from "react-icons/fa"
@@ -45,6 +45,13 @@ function header(props) {
     const [isOpen2, setIsOpen2] = React.useState(false);
     const onOpen2 = () => setIsOpen2(true);
     const onClose2 = () => setIsOpen2(false);
+
+    const { colorMode, toggleColorMode } = useColorMode()
+
+    useEffect(() => {
+      console.log(colorMode)
+      console.log(colorMode)
+    }, [])
 
 
     useEffect(() => {
