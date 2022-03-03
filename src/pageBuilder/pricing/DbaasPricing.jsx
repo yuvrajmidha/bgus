@@ -1,0 +1,281 @@
+import React from "react";
+import {
+  Button,
+  Box,
+  Collapse,
+  NumberInput,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
+  useDisclosure,
+  Slider,
+  SliderThumb,
+  SliderTrack,
+  SliderFilledTrack,
+} from "@chakra-ui/react";
+import Fade from "react-reveal/Fade";
+import { FaWindows, FaServer, FaDatabase } from "react-icons/fa";
+import { PricingCard, PricingQuote } from "../../components/cards/PricingCard";
+import Container from "../Container";
+import RadioGroup from "../../components/inputs/RadioGroup";
+
+
+const plans = [
+  {
+    index: 1,
+    name: "Professional",
+    icon: "/assets/images/icons/theme/paper-plane.svg",
+    feature: [
+      "4vCPU",
+      "80GB SSD Storage",
+      "6GB RAM",
+      "Hourly Backup",
+      "Desktop Virtualization",
+      "High Availability",
+      "High Clustering",
+    ],
+    popular: false,
+    cpu: 4,
+    storage: 80,
+    ram: 6,
+  },
+  {
+    index: 2,
+    name: "Business",
+    icon: "/assets/images/icons/theme/airplane.svg",
+    feature: [
+      "6vCPU",
+      "80GB SSD Storage",
+      "8GB RAM",
+      "Hourly Backup",
+      "Live Replica",
+      "Desktop Virtualization",
+      "High Availability",
+      "High Clustering",
+    ],
+    popular: true,
+    cpu: 6,
+    storage: 80,
+    ram: 8,
+  },
+  {
+    index: 3,
+    name: "Enterprise",
+    icon: "/assets/images/icons/theme/rocket.svg",
+    feature: [
+      "8vCPU",
+      "80GB SSD Storage",
+      "16GB RAM",
+      "Hourly Backup",
+      "Live Replica",
+      "Desktop Virtualization",
+      "High Availability",
+      "High Clustering",
+    ],
+    popular: false,
+    cpu: 8,
+    storage: 80,
+    ram: 16,
+  },
+];
+
+
+
+function DbaasPricing(props) {
+
+  const verifyNotEmpty = (x, text) => (x > 0 ? ", " + x + " " + text : "");
+
+  const [type, setType] = React.useState("");
+
+  //Hooks
+  const [planName, setPlan] = React.useState("Standard");
+  const handlePlan = (name) => setPlan(name);
+
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [show, setShow] = React.useState(false);
+  const openControls = () => {setShow(true); window.scrollTo(0, document.getElementById("collapse-1").offsetTop - 100);}
+
+  const [storage, setStorage] = React.useState(0);
+  const handleStorage = (storage) => setStorage(storage);
+
+  const [ram, setRam] = React.useState(0);
+  const handleRam = (ram) => setRam(ram);
+
+  const [cpu, setCPU] = React.useState(0);
+
+
+  const [dailybackup, setDailyBackup] = React.useState(false);
+  const handleDailyBackup = (dailybackup) =>
+    dailybackup ? ",Enabled Daily Backup" : "";
+
+  const [windowLicense, setWindowLicense] = React.useState(false);
+  const handleWindowLicense = (windowLicense) =>
+    windowLicense ? ",I have a Windows License" : "";
+
+  const resetOnCardChange = () =>{
+    setWindowLicense(false);
+    setDailyBackup(false);
+    setType("");
+    setCPU(0);
+    setRam(0);
+  setStorage(0);
+}
+
+const options = ['Daily Backups', 'Hourly Snapshots']
+
+  
+  return (
+    <div className="container-fluid" id="pricing">
+    <Container py={4}>
+      <Fade cascade duration={500} distance={"30%"} bottom>
+      <div className="row no-gutters justify-content-center">
+        {plans.map((plan) => {
+          return (
+            <div key={plan.index} className="col-lg-4 col-sm-6 my-3">
+              
+                <PricingCard
+                  icon={plan.icon}
+                  title={plan.name}
+                  popular={plan.popular}
+                  featureList={plan.feature}
+                >
+                  <Button
+                    className="mt-3 btn-block primary-btn"
+                    variant="solid"
+                    size="lg"
+                    colorScheme="primary"
+                    onClick={() => {
+                      handlePlan(plan.name);
+                      openControls();
+                      resetOnCardChange();
+                    }}
+                  >
+                    Get Started
+                  </Button>
+                </PricingCard>
+              
+            </div>
+          );
+        })}
+        
+      </div>
+      </Fade>
+      </Container>
+    <div id="collapse-1" className="container">
+      <Collapse id="quoteForm" className="px-lg-5" mt={6} in={show}>
+        <div className="px-4 py-5 border">
+          <div className="display5 text-center">
+            Customize Your {planName} Plan
+          </div>
+          <div className="row px-3">
+            
+              <div className="col-lg-12 mt-2">
+                <div className="h6">Choose a Type</div>
+                {/* <HStack align={"center"} {...group}>
+                  {options.map((value) => {
+                    const radio = getRadioProps({ value })
+                    return (
+                      <RadioCard onClick={() => setType(',' + value)} key={value} {...radio}>
+                        {value}
+                      </RadioCard>
+                    )
+                  })}
+                </HStack> */}
+                <RadioGroup options={options} defaultIndex={0} setValue={setType} ></RadioGroup>
+              </div>
+            
+            <div className="col-lg-12 mt-4">
+              <div className="h6">Extend SSD Storage (in GB)</div>
+              <Slider
+                color="primary"
+                my="18px"
+                defaultValue={0}
+                min={0}
+                max={256-80}
+                value={storage}
+                onChange={handleStorage}
+              >
+                <SliderTrack h="16px" borderRadius="8px" >
+                <SliderFilledTrack h="16px" borderRadius="8px" />
+                </SliderTrack>
+                <SliderThumb
+                  className="shadow-md"
+                  fontSize="md"
+                  fontWeight="800"
+                  width="auto"
+                  padding="8px"
+                  height="32px"
+                  children={80 + storage }
+                />
+              </Slider>
+            </div>
+            <div className="col-lg-12 mt-4">
+              <div className="h6">Additional Memory (in GB)</div>
+              <Slider
+                color="primary"
+                my="18px"
+                defaultValue={0}
+                max="64"
+                value={ram}
+                onChange={handleRam}
+              >
+                <SliderTrack h="16px" borderRadius="8px" >
+                <SliderFilledTrack h="16px" borderRadius="8px" />
+                </SliderTrack>
+                <SliderThumb
+                  className="shadow-md"
+                  fontSize="md"
+                  fontWeight="800"
+                  width="auto"
+                  padding="8px"
+                  height="32px"
+                  children={ram*2}
+                />
+              </Slider>
+            </div>
+            
+            
+            <div className="col-md-6 mt-4">
+              <div className="h6">Additional vCPUs</div>
+              <NumberInput
+                maxWidth="160px"
+                min={0}
+                max={60}
+                value={cpu}
+                onChange={(value)=>{value<=60?setCPU(value):setCPU(60)}}
+                step={cpu<2?1:2}
+              >
+                <NumberInputField className="bg-light" />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
+            </div>
+
+            <div className="col-md-6 mt-4 pt-md-4 pb-1 d-flex justify-content-md-end align-items-center">
+              <PricingQuote
+              serviceName="Database As A Service"
+                serviceDescription={`${planName} , ${type} ${verifyNotEmpty(
+                  storage,
+                  "GB Additional Storage"
+                )} ${verifyNotEmpty(ram*2, "GB Additional Memory")}
+                
+                ${verifyNotEmpty(
+                  cpu,
+                  "Additional vCPUs"
+                )}`}
+                button
+              ></PricingQuote>
+            </div>
+          </div>
+        </div>
+      </Collapse>
+    </div>
+    </div>
+  )
+}
+
+export default DbaasPricing;
