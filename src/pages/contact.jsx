@@ -68,11 +68,11 @@ class Contact extends Component {
             <Box px={4} width={{base: "100%", lg:"40%"}}>
                   <Box shadow="lg" bg="#fff" px={6} py={8} mb={4} borderWidth={0} rounded="lg">
                         <Heading fontFamily={"Nexa Bold"}>Australlia</Heading>
-                        <Link color="gray.500" fontWeight={700} mt={4} variant={"link"} textAlign="left">
+                        <Link color="gray.500" fontWeight={700} mt={4} href="mailto::support@bgunifiedsolutions.in" variant={"link"} textAlign="left">
                             <Text>support@bgunifiedsolutions.net</Text>
                         </Link>
                         <VStack color="gray.500" fontWeight={700} align={"start"} spacing={6}>
-                          <Link variant={"link"} textAlign="left">
+                          <Link href="tel:1300002487" variant={"link"} textAlign="left">
                             <Text>1300 00 BGUS</Text>
                           </Link>
                           <Link variant={"link"} textAlign="left">
@@ -83,12 +83,12 @@ class Contact extends Component {
                   </Box>
                   <Box shadow="lg" bg="#fff" px={6} py={8} mb={8} borderWidth={0} rounded="lg">
                         <Heading fontFamily={"Nexa Bold"}>India</Heading>
-                        <Link color="gray.500" fontWeight={700} mt={4} variant={"link"} textAlign="left">
-                            <Text>support@bgunifiedsolutions.net</Text>
+                        <Link color="gray.500" href="mailto::support@bgunifiedsolutions.in" fontWeight={700} mt={4} variant={"link"} textAlign="left">
+                            <Text>support@bgunifiedsolutions.in</Text>
                         </Link>
                         <VStack color="gray.500" fontWeight={700} align={"start"} spacing={6}>
-                          <Link variant={"link"} textAlign="left">
-                            <Text>1800 309 2487</Text>
+                          <Link href="tel:18003092487" variant={"link"} textAlign="left">
+                            <Text>1800 309 BGUS</Text>
                           </Link>
                           <Link variant={"link"} textAlign="left">
                             <FaBuilding size="24px"/>

@@ -39,7 +39,7 @@ function footer(props) {
          <b> Codbrix</b>
         {/* <Link href=""><a className="link">Codbrix</a></Link> */}
        </Text>
-       <Text textAlign={["center", "center", "right"]} fontSize="md" my={[3,3,0]} width={["100%","100%","50%"]}>© Copyright 2020 BG Unified Solutions</Text>
+       <Text textAlign={["center", "center", "right"]} fontSize="md" my={[3,3,0]} width={["100%","100%","50%"]}>© Copyright 2022 BG Unified Solutions</Text>
        </Flex>
      </Container>
    </Box>

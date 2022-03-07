@@ -9,18 +9,18 @@ import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 
 const sliderInfo = [
     {
-      title: <p>At BGUS, Perfection<br/> is a Reality.</p>,
+      title: <p><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a Reality</p>,
       imgSrc: "/assets/images/backgrounds/landing-1.png",
-      subTitle: "Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last 17520 hours.",
+      subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
       btnSecondaryLink: "/contact"
     },
     {
-      title: "Launching our Services in India",
+      title: "Launched our Services in India",
       imgSrc: "/assets/images/backgrounds/landing-2.png",
-      subTitle: "Fast, friendly and delivery oriented web services, driven by our commitment of customer satisfaction.",
+      subTitle: "Things are moving very fast in India and Singapore. We anticipate having 2 racks in each POP in the next 6-12 months.",
       btnPrimaryText: "Read More",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/newsroom/BG-Unified-Solutions-services-are-now-in-India",
@@ -46,22 +46,23 @@ const sliderInfo = [
     {
       title: <p>Cybersecurity meets Artificial Intelligence</p>,
       imgSrc: "/assets/images/backgrounds/ai.png",
-      subTitle: <span><b className="text-primary">Forcepoint</b> and BGUS working collaboratively to offer services in AI Space.</span>,
+      subTitle: <span>Something coming in the next few months which will be one of the best as a service offering of BG Unified Solutions in the AI - Artificial Intelligence space.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-in-AI-Space"
     
     },
     {
-      title: <p>Client Focused. Results Driven.</p>,
+      title: <p>Highly Redundant SIPaaS</p>,
       imgSrc: "/assets/images/backgrounds/landing-7.png",
-      subTitle: <span><b className="text-primary">Vocus</b> working as the technology partner  with BGUS to extend service offerings to the end-customers.</span>,
+      subTitle: <span>We have recently partnered up with <b className="text-primary">Vocus Communications</b> for offering SIPaaS with PREMIUM SIP Channels.
+      The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/stories"
     },
     {
       title: <p>Creating Impact Together</p>,
       imgSrc: "/assets/images/backgrounds/city.png",
-      subTitle: <span><b className="text-primary">Forcepoint</b> working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.</span>,
+      subTitle: <span><b className="text-primary">Forcepoint</b> working collaboratively with BG Unified Solutions to collaboratively offer CDR Zero Trust Content to the end customers in a bundled offering for Managed Firewall As A Service.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-working-collaboratively"
     

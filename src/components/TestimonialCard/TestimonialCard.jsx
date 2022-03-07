@@ -38,7 +38,7 @@ function TestimonialCard({ testimonials }) {
   return (
     <Container mt={12}>
       <Flex wrap="wrap" width="100%">
-        {Testimonial(testimonials[0], "112px")}
+        {/* {Testimonial(testimonials[0], "112px")} */}
         {Testimonial(testimonials[1])}
         {Testimonial(testimonials[2], "224px")}
         {Testimonial(testimonials[3])}

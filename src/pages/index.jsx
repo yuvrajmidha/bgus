@@ -255,15 +255,15 @@ class Landing extends Component {
                   titleSize: ["15px", "18px"]
                 }} />
                 <Body width={"33.33%"} type="numberCount" data={{
-                  count: 900,
+                  count: 3,
                   align: "left",
-                  suffix: "TB+",
+                  suffix: "PB+",
                   title: "Storage Capacity",
                   fontSize: ["24px", "30px"],
                   titleSize: ["15px", "18px"]
                 }} />
                 <Body pl={5} width={"33.33%"} type="numberCount" data={{
-                  count: 1600,
+                  count: 3000,
                   align: "left",
                   suffix: "+",
                   title: "SIP Channels",
@@ -315,8 +315,8 @@ class Landing extends Component {
                 </Flex>
               </Box>
             </Box>
-            {news(newsroom[7])}
-            {news(newsroom[4])}
+            {news(newsroom[0])}
+            {news(newsroom[3])}
           </Row>
         </Section>
 

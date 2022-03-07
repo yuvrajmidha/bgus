@@ -195,7 +195,7 @@ function about(){
                 
               </div>
               <div className="px-3 mt-4 text-left d-flex flex-column">
-                <span className="h6 text-primary">🇮🇳 INDIA TEAM</span>
+                <span className="h6 text-primary">INDIA TEAM</span>
                 <span className="display5">Meet, the Awesome People from India</span>
               </div>
                <div className="row py-2">
