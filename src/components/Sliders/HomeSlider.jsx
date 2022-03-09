@@ -10,12 +10,14 @@ import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 const sliderInfo = [
     {
       title: <p><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a Reality</p>,
-      imgSrc: "/assets/images/backgrounds/landing-1.png",
+      imgSrc: "/assets/videos/uptime.gif",
       subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
-      btnSecondaryLink: "/contact"
+      btnSecondaryLink: "/contact",
+      divider: true,
+      filter: "brightness(.4);"
     },
     {
       title: "Launched our Services in India",
@@ -24,10 +26,11 @@ const sliderInfo = [
       btnPrimaryText: "Read More",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/newsroom/BG-Unified-Solutions-services-are-now-in-India",
-      btnSecondaryLink: "/contact"
+      btnSecondaryLink: "/contact",
+      video: false
     },
     {
-      title: "Put more data to work with Seagate Enterprise Data Systems",
+      title: "Discover Data Storage Solutions Built on Trust, Affordability & Ease",
       imgSrc: "/assets/images/backgrounds/landing-seagate.png",
       subTitle: "BG Unified is proud to announce an executive partnership with Seagate, a technology leader for over 40 years.",
       btnPrimaryText: "Explore Now",
@@ -52,7 +55,7 @@ const sliderInfo = [
     
     },
     {
-      title: <p>Highly Redundant SIPaaS</p>,
+      title: <p>Highly Redundant SIPaaS with Vocus Communications</p>,
       imgSrc: "/assets/images/backgrounds/landing-7.png",
       subTitle: <span>We have recently partnered up with <b className="text-primary">Vocus Communications</b> for offering SIPaaS with PREMIUM SIP Channels.
       The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.</span>,
@@ -68,12 +71,31 @@ const sliderInfo = [
     
     },
     {
-      title: <p>Bright Solutions. Comprehensive Results.</p>,
-      imgSrc: "/assets/images/backgrounds/city.png",
-      subTitle: <span><b className="text-primary">Huawei</b> working collaboratively with BG Unified Solutions to extend BG's services offerings and enhance growth.</span>,
-      btnSecondaryText: "Read Customer Stories",
-      btnSecondaryLink: "/stories"
-    
+      title: <p>Expanding Global Footprints</p>,
+      imgSrc: "/assets/images/backgrounds/landing-3.png",
+      subTitle: <span>Point of presence at state of the art Data center by <b className="text-primary">Tata Communication Limited</b> located right in the heart of India, GK 1, New Delhi</span>,
+      btnPrimaryText: "Explore Now",
+      btnSecondaryText: "Get a quote",
+      btnPrimaryLink: "/solutions",
+      btnSecondaryLink: "/contact"
+    },
+    {
+      title: <p>SBSS University Website running on our Infrastructure</p>,
+      imgSrc: "/assets/images/backgrounds/landing-8.png",
+      subTitle: <span>Shaheed Bhagat Singh State University Website running on BGUS' Infrastructures (IaaS). We promise to deliver 100% uptime.</span>,
+      btnPrimaryText: "Explore Now",
+      btnSecondaryText: "Get a quote",
+      btnPrimaryLink: "/solutions",
+      btnSecondaryLink: "/contact"
+    },
+    {
+      title: <p> Connectivity Is Key To Secured Communication</p>,
+      imgSrc: "/assets/images/backgrounds/landing-2.png",
+      subTitle: <span>On the way to become an authorized ISP in Delhi Region with a vision to become an authorized national ISP in India.</span>,
+      btnPrimaryText: "Explore Now",
+      btnSecondaryText: "Get a quote",
+      btnPrimaryLink: "/solutions",
+      btnSecondaryLink: "/contact"
     },
  
   ]
@@ -149,10 +171,19 @@ function main(props) {
     }, [])
     return (
         <div>
+              
             <Box pos="relative" height={["440px","520px","720px"]}>
                 {sliderInfo.map((slide, index) => 
-                  <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"} minH="448px"  height={["440px","520px","720px"]} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
-                )}
+                  {return slide.video === true ? <Box pos="absolute" key={index} top={0} left={0} opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} width="100%">
+                          <video width="100%" height="100%" autoplay muted>
+                            <source src="/assets/videos/uptime.mp4" type="video/mp4" />
+                          </video>
+                       </Box> : 
+                       <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} filter={slide.filter} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
+                  })}
+
+                  {sliderInfo[animate]?.divider === true && <Image src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>}
+                
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>
                 <Flex my={0}>
