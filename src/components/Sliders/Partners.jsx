@@ -4,7 +4,7 @@ import { Image, Box } from '@chakra-ui/react';
 
 
 const slides = []
-for (let index = 0; index < 13; index++) {
+for (let index = 0; index < 16; index++) {
     slides.push(
         <Image key={index} mx={6} w={["50%", "32%", "25%", "20%"]} alt={"parter-" + index} src={`/assets/images/partners/partners (${index}).png`} maxW={["180px","256px"]} px={3} objectFit="contain" height="64px"></Image>
     )

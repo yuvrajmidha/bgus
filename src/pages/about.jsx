@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-flickity-component";
 import Team from "../components/cards/team";
 import { FaArrowRight, FaRedo } from "react-icons/fa";
-import { Box, Flex, Heading, Text, Image, Button, Icon } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Image, Button, Icon, SimpleGrid } from "@chakra-ui/react";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
@@ -123,11 +123,11 @@ function about(){
           </Box>
           <div className="container">
             <div className="row">
-              <div className="col-lg-10 offset-1">
+              <div className="col-lg-12">
                 <div className="row my-4">
                   <div className="col-sm-3 col-4">
                     <span className="display4 mb-0 text-primary">
-                      <MyCount endPoint={40} suffix="+" />
+                      <MyCount endPoint={50} suffix="+" />
                     </span>
                     <h5>Clients</h5>
                   </div>
@@ -139,7 +139,7 @@ function about(){
                   </div>
                   <div className="col-sm-3 col-4">
                     <span className="display4 mb-0 text-primary">
-                      <MyCount endPoint={20} suffix="+" />
+                      <MyCount endPoint={40} suffix="+" />
                     </span>
                     <h5>Projects</h5>
                   </div>
@@ -153,13 +153,19 @@ function about(){
                 Unified Solutions to our clients.
 
                 </Text>
-                <Flex mt={4} align="center"><Image src="/assets/images/icons/color/target.svg" height="64px"></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Mission</Heading></Flex>
-                <Text  mt={2} fontSize="xl" >Render comprehensive, secure, dependable, 
-                affordable IT services and amenities that intensify the End-customer Experience.
-                </Text> 
-                <Flex mt={4} align="center"><Image src="/assets/images/icons/color/strategic-vision.svg" height="64px"></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Vision</Heading></Flex>
-                <Text mt={2} fontSize="xl" >Uplifting Tech Essentials for your Enterprise.
-                </Text>
+               <SimpleGrid columns={2} columnGap={3} my={6}>
+                  <Box bg="gray.50" rounded={"lg"} p={8}>
+                    <Flex mt={4} align="center"><Image src="/assets/images/icons/color/target.svg" height="32px" mr={3}></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Mission</Heading></Flex>
+                    <Text  mt={2} fontSize="xl" >Render comprehensive, secure, dependable, 
+                    affordable IT services and amenities that intensify the End-customer Experience.
+                    </Text> 
+                  </Box>
+                  <Box bg="gray.50" rounded={"lg"} p={8}>
+                  <Flex mt={4} align="center"><Image src="/assets/images/icons/color/strategic-vision.svg" mr={3} height="32px"></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Vision</Heading></Flex>
+                  <Text mt={2} fontSize="xl" >Uplifting Tech Essentials for your Enterprise.
+                  </Text>
+                  </Box>
+               </SimpleGrid>
               </div>
             </div>
           </div>

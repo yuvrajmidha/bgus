@@ -1,17 +1,15 @@
 export default [
 
     {
-        id: 1,
         imageUrl: "assets/images/brands/seagate_square.png",
         imageAlt: "Seagate",
-        author: "Bryan Cawse",
-        paragraph: "I have had the ... opportunity to have worked with BGUS with multiple vendors. They have a brilliant customer orientated demeanor and their technical skills are second to none. When it comes to Information Security I can always rely on BGUS.",
+        author: "Atish Singh",
+        paragraph: "Partnering with BG Unified Solutions has been an amazing journey. BG Unified services and professionalism is one in a million, with highly skilled knowledge across all technologies.The leadership and commitment to his customers is priceless.",
         CompanyName: "Seagate Corporate",
-        designation: "Senior Enterprise Account Executive",
+        designation: "ANZ Enterprise Business Manager",
         emoji: ""
     },
     {
-        id: 2,
         imageUrl: "assets/images/brands/nsw_gov.png",
         imageAlt: "Company Logo",
         author: "Eldon Wong",
@@ -21,7 +19,24 @@ export default [
         emoji: ""
     },
     {
-        id: 3,
+        imageUrl: "assets/images/brands/alibaba.png",
+        imageAlt: "Alibaba Cloud",
+        author: "James Wang",
+        paragraph: "Saurabh is a hard-working and intelligent business owner who welcomes change and motivates to do better every day. We worked on a project together and his exceptional set of hands-on skills, ingenuity, and integrity made everything so much easier.",
+        CompanyName: "Alibaba Cloud",
+        designation: "Country Manager at Alibaba Cloud - ANZ",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/radware.png",
+        imageAlt: "Radware",
+        author: "Yaniv Hoffman",
+        paragraph: "I have distinct pleasure of working with BG Unified Solutions. Professionalism, attention to details along with the loyalty and commitment to its customers/partners is unparalleled to what I have seen in the market. ",
+        CompanyName: "Radware",
+        designation: "Vice President and Managing Director - APJ",
+        emoji: ""
+    },
+    {
         imageUrl: "assets/images/brands/datacom.png",
         imageAlt: "Company Logo",
         author: "Bruce McEwen",
@@ -30,28 +45,8 @@ export default [
         designation: "Associate Director",
         emoji: ""
     },
+    
     {
-        id: 4,
-        imageUrl: "assets/images/brands/nsw_gov.png",
-        imageAlt: "Company Logo",
-        author: "Kate Romanenko",
-        paragraph: "I worked with BGUS during their time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue.",
-        CompanyName: "Revenue NSW",
-        designation: "Senior Application Developer",
-        emoji: ""
-    },
-    {
-        id: 5,
-        author: "Houman Asefi",
-        imageUrl: "assets/images/brands/letsSaas.png",
-        imageAlt: "Company Logo",
-        paragraph: "BGUS comprises of personnels that are a rare combination of technical mastery and entrepreneurship mindset with the mojo of 'getting things done fast'. They have the capacity of an engineering business unit.",
-        CompanyName: "Let’s SaaS",
-        designation: "Sales Strategy Executive",
-        emoji: ""
-    },
-    {
-        id: 6,
         author: "Nicholas Falloon",
         imageUrl: "assets/images/brands/telstra.png",
         imageAlt: "Company Logo",
@@ -62,7 +57,6 @@ export default [
     },    
     
     {
-        id: 9,
         imageUrl: "assets/images/brands/nsw_gov.png",
         author: "Jeremy Wood",
         imageAlt: "Company Logo",
@@ -74,7 +68,6 @@ export default [
         emoji: ""
     },
     {
-        id: 8,
         imageUrl: "assets/images/brands/optus.png",
         imageAlt: "Company Logo",
         author: "Sergio Anacleto",
@@ -84,7 +77,24 @@ export default [
         emoji: ""
     },
     {
-        id: 10,
+        imageUrl: "assets/images/brands/nsw_gov.png",
+        imageAlt: "Company Logo",
+        author: "Kate Romanenko",
+        paragraph: "I worked with BGUS during their time at Revenue NSW (OSR). They undertook a massive task of F5 load balancer upgrade - and things like that never go smoothly. What was absolutely amazing is the speed with which they resolved every single issue.",
+        CompanyName: "Revenue NSW",
+        designation: "Senior Application Developer",
+        emoji: ""
+    },
+    {
+        author: "Houman Asefi",
+        imageUrl: "assets/images/brands/letsSaas.png",
+        imageAlt: "Company Logo",
+        paragraph: "BGUS comprises of personnels that are a rare combination of technical mastery and entrepreneurship mindset with the mojo of 'getting things done fast'. They have the capacity of an engineering business unit.",
+        CompanyName: "Let’s SaaS",
+        designation: "Sales Strategy Executive",
+        emoji: ""
+    },
+    {
         imageUrl: "/assets/images/brands/cisco.png",
         imageAlt: "Company Logo",
         author: "Dave Moy",
@@ -103,7 +113,6 @@ export default [
         emoji: ""
     },
     {
-        id: 11,
         imageUrl: "assets/images/brands/ambition_tech.png",
         imageAlt: "Company Logo",
         author: "Kelly McCaughey",
@@ -113,7 +122,6 @@ export default [
         emoji: ""
     },
     {
-        id: 12,
         imageUrl: "assets/images/brands/optus.png",
         imageAlt: "Company Logo",
         author: "Tushar Bhatt",
@@ -128,7 +136,6 @@ export default [
         emoji: ""
     },
     {
-        id: 14,
         imageUrl: "assets/images/brands/accelerate.png",
         imageAlt: "Company Logo",
         author: "Matt Campbell",
@@ -138,7 +145,6 @@ export default [
         emoji: ""
     },
     {
-        id: 15,
         imageUrl: "assets/images/brands/sabre_pacific.png",
         imageAlt: "Company Logo",
         author: "Munish Verma",
@@ -147,24 +153,5 @@ export default [
         designation: "Head of Technology Services",
         emoji: ""
     },
-    // {
-    //     id: 14,
-    //     imageUrl: "assets/images/brands/sabre_pacific.png",
-    //     imageAlt: "Company Logo",
-    //     author: "Runi Nielsen",
-    //     paragraph: "BGUS has the ultimate team of technical engineers with an attitude that ‘nothing is too hard’ with a focus that ‘an affordable high quality solution will be found’. The team never stops seeking improvement, in both themselves and in delivery of solutions. They are a highly regarded and respected team.",
-    //     CompanyName: "Candido",
-    //     designation: "",
-    //     emoji: ""
-    // },
-    // {
-    //     id: 16,
-    //     imageUrl: "assets/images/brands/sabre_pacific.png",
-    //     imageAlt: "Company Logo",
-    //     author: "Julian Evans JP",
-    //     paragraph: "I worked with BG Unified Solutions briefly while scoping work for an upgrade to UCCX Premium. They quoted on this work with an impressive turn-around time and provided an in-depth analysis of our network topology to facilitate a more effective discussion on project possibilities.From the start, they showed a huge level of technical knowledge and enthusiasm and I hope to have the opportunity to work with them in the future.",
-    //     CompanyName: "Accelerated Outcomes for Volunteering and Charity Services",
-    //     designation: "Volunteer",
-    //     emoji: ""
-    // },
+    
 ]
