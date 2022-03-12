@@ -10,7 +10,7 @@ import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 const sliderInfo = [
     {
       title: <p><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a Reality</p>,
-      imgSrc: "/assets/videos/uptime.gif",
+      imgSrc: "/assets/videos/flyover.gif",
       subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -21,13 +21,14 @@ const sliderInfo = [
     },
     {
       title: "Launched our Services in India",
-      imgSrc: "/assets/images/backgrounds/landing-2.png",
+      imgSrc: "/assets/videos/india.gif",
       subTitle: "Things are moving very fast in India and Singapore. We anticipate having 2 racks in each POP in the next 6-12 months.",
       btnPrimaryText: "Read More",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/newsroom/BG-Unified-Solutions-services-are-now-in-India",
       btnSecondaryLink: "/contact",
-      video: false
+      divider: true,
+      filter: "brightness(.4);"
     },
     {
       title: "Discover Data Storage Solutions Built on Trust, Affordability & Ease",
@@ -48,10 +49,12 @@ const sliderInfo = [
     // },
     {
       title: <p>Cybersecurity meets Artificial Intelligence</p>,
-      imgSrc: "/assets/images/backgrounds/ai.png",
+      imgSrc: "/assets/videos/ai.gif",
       subTitle: <span>Something coming in the next few months which will be one of the best as a service offering of BG Unified Solutions in the AI - Artificial Intelligence space.</span>,
       btnSecondaryText: "Read More",
-      btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-in-AI-Space"
+      btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-in-AI-Space",
+      divider: true,
+      filter: "brightness(.8);"
     
     },
     {
@@ -90,7 +93,7 @@ const sliderInfo = [
     },
     {
       title: <p> Connectivity Is Key To Secured Communication</p>,
-      imgSrc: "/assets/images/backgrounds/landing-2.png",
+      imgSrc: "/assets/images/backgrounds/landing-1.png",
       subTitle: <span>On the way to become an authorized ISP in Delhi Region with a vision to become an authorized national ISP in India.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -167,7 +170,7 @@ function main(props) {
         if(memory == sliderInfo.length) memory = 0
         setAnimation(animate => animate + 1)
         
-      }, 10000)
+      }, 15000)
     }, [])
     return (
         <div>
@@ -182,7 +185,7 @@ function main(props) {
                        <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} filter={slide.filter} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
                   })}
 
-                  {sliderInfo[animate]?.divider === true && <Image src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>}
+                  {<Image transition="1s" opacity={sliderInfo[animate].divider === true ? "1" : "0"} src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>}
                 
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>

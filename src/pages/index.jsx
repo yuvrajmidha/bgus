@@ -255,7 +255,7 @@ class Landing extends Component {
                   titleSize: ["15px", "18px"]
                 }} />
                 <Body width={"33.33%"} type="numberCount" data={{
-                  count: 3,
+                  count: 5,
                   align: "left",
                   suffix: "PB+",
                   title: "Storage Capacity",
@@ -266,7 +266,7 @@ class Landing extends Component {
                   count: 3000,
                   align: "left",
                   suffix: "+",
-                  title: "SIP Channels",
+                  title: "Highly Redundant SIP Channels",
                   fontSize: ["24px", "30px"],
                   titleSize: ["15px", "18px"]
                 }} />
