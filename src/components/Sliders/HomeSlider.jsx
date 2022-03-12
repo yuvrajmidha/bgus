@@ -9,7 +9,7 @@ import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 
 const sliderInfo = [
     {
-      title: <p><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a Reality</p>,
+      title: <p><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a reality</p>,
       imgSrc: "/assets/videos/flyover.gif",
       subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
@@ -20,7 +20,7 @@ const sliderInfo = [
       filter: "brightness(.4);"
     },
     {
-      title: "Launched our Services in India",
+      title: "Launched our services in India",
       imgSrc: "/assets/videos/india.gif",
       subTitle: "Things are moving very fast in India and Singapore. We anticipate having 2 racks in each POP in the next 6-12 months.",
       btnPrimaryText: "Read More",
@@ -31,7 +31,7 @@ const sliderInfo = [
       filter: "brightness(.4);"
     },
     {
-      title: "Discover Data Storage Solutions Built on Trust, Affordability & Ease",
+      title: "Discover Data Storage Solutions built on Trust, Affordability & Ease",
       imgSrc: "/assets/images/backgrounds/landing-seagate.png",
       subTitle: "BG Unified is proud to announce an executive partnership with Seagate, a technology leader for over 40 years.",
       btnPrimaryText: "Explore Now",
@@ -83,7 +83,7 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: <p>SBSS University Website running on our Infrastructure</p>,
+      title: <p>SBSS university website running on our infrastructure</p>,
       imgSrc: "/assets/images/backgrounds/landing-8.png",
       subTitle: <span>Shaheed Bhagat Singh State University Website running on BGUS' Infrastructures (IaaS). We promise to deliver 100% uptime.</span>,
       btnPrimaryText: "Explore Now",
@@ -92,7 +92,7 @@ const sliderInfo = [
       btnSecondaryLink: "/contact"
     },
     {
-      title: <p> Connectivity Is Key To Secured Communication</p>,
+      title: <p>Connectivity is the key to a secured communication</p>,
       imgSrc: "/assets/images/backgrounds/landing-1.png",
       subTitle: <span>On the way to become an authorized ISP in Delhi Region with a vision to become an authorized national ISP in India.</span>,
       btnPrimaryText: "Explore Now",
@@ -185,7 +185,7 @@ function main(props) {
                        <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} filter={slide.filter} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
                   })}
 
-                  {<Image transition="1s" opacity={sliderInfo[animate].divider === true ? "1" : "0"} src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>}
+                  {<Image transition="1s" opacity={sliderInfo[animate]?.divider === true ? "1" : "0"} src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>}
                 
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>
