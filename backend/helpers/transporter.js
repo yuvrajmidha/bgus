@@ -4,6 +4,7 @@ exports.transporter = nodemailer.createTransport({
     host:process.env.host,
     port: process.env.port, 
     secureConnection: "secure",
+    secure: true,
     auth: {
       user: process.env.user,
       pass: process.env.pass
