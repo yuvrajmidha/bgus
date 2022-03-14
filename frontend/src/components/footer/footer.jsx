@@ -36,8 +36,7 @@ function footer(props) {
      <Container>
        <Flex fontSize={["10px","12px","14px"]} wrap="wrap" justify="space-between">
        <Text textAlign={["center", "center", "left"]} fontSize="lg" my={[3,3,0]} width={["100%","100%","50%"]}>Website developed and maintained by 
-         <b> Codbrix</b>
-        {/* <Link href=""><a className="link">Codbrix</a></Link> */}
+        <a className="link" href="https://www.linkedin.com/company/codbrix/" target="_blank"> Codbrix Labs</a>
        </Text>
        <Text textAlign={["center", "center", "right"]} fontSize="md" my={[3,3,0]} width={["100%","100%","50%"]}>© Copyright 2022 BG Unified Solutions</Text>
        </Flex>

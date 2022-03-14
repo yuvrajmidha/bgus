@@ -99,7 +99,7 @@ function about(){
               </div>
             </Slider>
           </Box> */}
-          <Box my={12} pos="relative">
+          <Box maxWidth={"100vw"} overflowX="hidden" minH="440px" my={12} pos="relative">
             <Container>
               <Flex width="100%" height="400px" onClick={() => move()} cursor="pointer" pos="relative">
                 {timeline.map((year, index) => <Box key={index} cursor="pointer"  transition="1s" zIndex={index * -1} transform={`rotate(${year.rotate}deg) translateX(${activeCard > index ? 600 : 0}px)`} p={12} overflow="hidden" pos="absolute" height="400px" bg="white" width="360px" boxShadow="md" rounded={8}>
@@ -153,14 +153,14 @@ function about(){
                 Unified Solutions to our clients.
 
                 </Text>
-               <SimpleGrid columns={2} columnGap={3} my={6}>
-                  <Box bg="gray.50" rounded={"lg"} p={8}>
+               <SimpleGrid columns={{base:1, lg: 2}} columnGap={3} >
+                  <Box bg="gray.50" rounded={"lg"} p={8} my={6}>
                     <Flex mt={4} align="center"><Image src="/assets/images/icons/color/target.svg" height="32px" mr={3}></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Mission</Heading></Flex>
                     <Text  mt={2} fontSize="xl" >Render comprehensive, secure, dependable, 
                     affordable IT services and amenities that intensify the End-customer Experience.
                     </Text> 
                   </Box>
-                  <Box bg="gray.50" rounded={"lg"} p={8}>
+                  <Box bg="gray.50" rounded={"lg"} p={8} my={6}>
                   <Flex mt={4} align="center"><Image src="/assets/images/icons/color/strategic-vision.svg" mr={3} height="32px"></Image>&nbsp;&nbsp;<Heading size="lg" fontFamily="Nexa Bold">Our Vision</Heading></Flex>
                   <Text mt={2} fontSize="xl" >Uplifting Tech Essentials for your Enterprise.
                   </Text>
