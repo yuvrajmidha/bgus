@@ -215,6 +215,26 @@ function about(){
                     Telecommunications expert, who started his entrepreneurial journey in 2011, has helped various organizations with digital transformation.
                   </Team>
                 </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Legal Counsel India Operations"
+                    name="Priyanka Sekhri"
+                    img="/assets/images/team/priyanka.png"
+                  >
+                  
+                  With an inherent ability to lead and having learnt intricacies of law, an independent and iron-willed woman. She brims with optimism, is full of life and inspires others with her sheer presence.
+                  </Team>
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Operation Supervisor India Operations"
+                    name="Dolly Sekhri"
+                    img="/assets/images/team/dolly.png"
+                  >
+                   
+                   An amazing manager with a solid understanding of operations management she ensures that the organization is adhering to its quality standards.
+                  </Team>
+                </div>
                 
               </div>
               <div className="row">

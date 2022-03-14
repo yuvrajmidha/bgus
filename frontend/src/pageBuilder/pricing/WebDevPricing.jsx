@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import Fade from 'react-reveal/Fade';
 import { PricingQuote } from '../../components/cards/PricingCard'
-import { FaMobileAlt,FaGlobe,FaRobot,FaPencilRuler,FaDrawPolygon,FaCode } from "react-icons/fa";
+import { FaMobileAlt,FaGlobe,FaRobot,FaPencilRuler,FaDrawPolygon,FaCode, FaChevronRight, FaChevronDown } from "react-icons/fa";
 
 import { Text } from '@chakra-ui/react';
 import RadioGroup from '../../components/inputs/RadioGroup';
@@ -97,7 +97,7 @@ function WebDevPricing(props) {
                             />
                         </div>
                         <div className="col-lg-12 d-flex justify-content-center my-3">
-                            <Button rightIcon="chevron-right"
+                            <Button rightIcon={<FaChevronRight></FaChevronRight>}
                             isDisabled={(phase==null)?true:false} onClick={() => {
                                 setPage(2);
                             }} variant="solid" className="primary-btn" colorScheme="primary" size="lg" >Next</Button>
@@ -170,7 +170,7 @@ function WebDevPricing(props) {
                         </div>
                         <div className="col-lg-12 d-flex justify-content-center my-3">
                             
-                            <Button rightIcon="chevron-right"
+                            <Button rightIcon={<FaChevronRight></FaChevronRight>}
                             isDisabled={(mobile==false && web==false && ai==false)?true:false} onClick={() => {
                                 setPage(3);
                             }} variant="solid" className="primary-btn" colorScheme="primary" size="lg" >Next</Button>
@@ -181,17 +181,17 @@ function WebDevPricing(props) {
             }
 
 {page == 3 &&
-                <div className="px-lg-4 py-5 rounded-8 shadow-lg">
+                <div className="px-lg-4 py-5 overflow-y-auto rounded-8 shadow-lg">
                     <Fade className="px-lg-5 " duration={500} right >
                     <div className="row text-center px-3 px-lg-5 justify-content-center">
                         <Box w={["90%","80%","72%"]}>
                             <div className="h6 mt-4 d-flex justify-content-start">Functionalities </div>
                             <Menu closeOnSelect={false}>
                                 <div>
-                            <MenuButton marginY={3} w={["100%"]} fontWeight="normal" overflow="hidden" justifyContent="space-between" bg="white" borderWidth={1} padding={4} as={Button} rightIcon="chevron-down">
+                            <MenuButton marginY={3} w={["100%"]} fontWeight="normal" overflow="hidden" justifyContent="space-between" bg="white" borderWidth={1} padding={4} as={Button} rightIcon={<FaChevronDown/>}>
                                 {handleFunctionalities(functionalities)}
                             </MenuButton>
-                            <MenuList w={["50%"]} zIndex={100} placement="bottom">
+                            <MenuList w={["50%"]} placement="bottom">
                                 <MenuOptionGroup value={functionalities} onChange={setFunctionalities} type="checkbox">
                                 <MenuItemOption value=" CMS">CMS</MenuItemOption>
                                 <MenuItemOption value=" Frontend">Frontend</MenuItemOption>
@@ -225,7 +225,7 @@ function WebDevPricing(props) {
                             
                             
                             <div className="d-flex justify-content-center mt-5">
-                                <Button rightIcon="chevron-right" onClick={() => {
+                                <Button rightIcon={<FaChevronRight></FaChevronRight>} onClick={() => {
                                     setPage(4);
                                 }} variant="solid" className="primary-btn" colorScheme="primary" size="lg" >Next</Button>
                                 
