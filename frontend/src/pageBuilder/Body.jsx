@@ -92,7 +92,7 @@ function Body({ gap = 4, type, data, width="100%", ...props }) {
                 return (
                     <Box px={0} my={4} w={width} {...props}>
                     <Row>
-                        {props.containerData.map((dat, key) => (<Box key={index} px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type, dat.data)} </Box>))}
+                        {props.containerData.map((dat, index) => (<Box key={index} px={[6, 6, gap / 2]} my={4} w={dat.width}>{giveMeComponent(dat.type, dat.data)} </Box>))}
                     </Row>
                     </Box>
                 )
