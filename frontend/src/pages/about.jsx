@@ -235,6 +235,16 @@ function about(){
                    An amazing manager with a solid understanding of operations management she ensures that the organization is adhering to its quality standards.
                   </Team>
                 </div>
+                {/* <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Lead Project "
+                    name="Yuvraj Midha"
+                    img="/assets/images/team/yuvraj.png"
+                  >
+                   
+                   An amazing manager with a solid understanding of operations management she ensures that the organization is adhering to its quality standards.
+                  </Team>
+                </div> */}
                 
               </div>
               <div className="row">
