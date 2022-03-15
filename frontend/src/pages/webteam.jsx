@@ -9,7 +9,7 @@ import Title from "../pageBuilder/Title";
 import { FaBehance, FaBlogger, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const teamCard = (member, height) => (<Flex height="100%" overflow="hidden" bg="white" pos="relative" rounded={8} boxShadow="xl" p={"32px"} direction="column" justify="center">
-    <Box top={"-32px"} left={0} width="100%" transform="skewy(-6deg)" objectFit="contain" pos="absolute" zIndex="0" width="100%" bg="dark.500" height="160px"></Box>
+    <Box top={"-32px"} left={0} width="100%" transform="skewy(-6deg)" objectFit="contain" pos="absolute" zIndex="0" bg="dark.500" height="160px"></Box>
     <Fade>
     <Image rounded="80px" height="160px" mx="auto" width="160px" objectFit="cover" src={`/assets/images/team/${member.username}.jpg`}></Image>
     <Box textAlign="center">
