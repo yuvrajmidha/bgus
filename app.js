@@ -36,8 +36,10 @@ app.use('/assets', express.static('frontend/out/assets'));
 app.use('/_next', express.static('frontend/out/_next'));
 
 app.use((req, res, next) => {
+    var url = req.url.split('?')[0].split('/');
+    var _path = url[0] + (url[1] === null || url[1] === '' ? '' : url[1])
     try {
-        if(fs.existsSync(__dirname + '/frontend/out/' + req.url + '.html')) {
+        if(fs.existsSync(__dirname + '/frontend/out/' + _path + '.html')) {
             next();
         } else {
             res.status(404);
