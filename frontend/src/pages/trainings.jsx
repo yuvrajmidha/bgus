@@ -40,18 +40,18 @@ function main() {
         src="/assets/images/backgrounds/tranings.jpg"
         style={{opacity:"0.3"}}
         />
-                <Fade duration={700} delay={1000} bottom>
-                    <Flex textAlign={["center","center","left"]} alignContent={["center","center","left"]} justifyContent={["center","center","left"]}  align="center" py={4}>
+                {/* <Fade duration={700} delay={1000} bottom> */}
+                    <Flex transform="scale(1)" textAlign={["center","center","left"]} alignContent={["center","center","left"]} justifyContent={["center","center","left"]}  align="center" py={4}>
                         <Heading fontSize={["18px","24px"]}>Trainings and Certifications</Heading>
                     </Flex>
-                </Fade>
-                <Fade duration={700} delay={100} bottom>
-                <Flex textAlign={["center","center","left"]} justifyContent={["center","center","left"]}>
+                {/* </Fade> */}
+                {/* <Fade duration={700} delay={100} bottom> */}
+                <Flex transform="scale(1)" textAlign={["center","center","left"]} justifyContent={["center","center","left"]}>
                     <Heading fontSize={["40px", "48px","56px","64px"]} className="display2 text-white">
                         Be Trained for World-Class Technologies
                     </Heading>
                 </Flex>
-                </Fade>
+                {/* </Fade> */}
         </Section>
         <Section mb={0}>
             <Heading opacity=".9" lineHeight={1.5} fontSize="32px" fontFamily="Nexa Bold" textAlign="center">

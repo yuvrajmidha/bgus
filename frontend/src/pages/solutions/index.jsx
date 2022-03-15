@@ -64,13 +64,13 @@ function OurSolutions(){
           </Head>
         <Box  zIndex="10" pos="relative" bg="dark.500">
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".5" objectFit="cover" width="100%" src="/assets/images/backgrounds/solutions.jpg"></Image>
-            <Fade distance="5%" duration={500} top>
-            <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
+            {/* <Fade distance="5%" duration={500} top> */}
+            <Section transform="scale(1)" position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">What we deliver</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>Our Solutions</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>We provide you with the solution, needed for your Enterprise</Text>
             </Section>
-            </Fade>
+            {/* </Fade> */}
           </Box>
         <Section mt={0} pt={0}>
         <div className="d-flex mt-3 justify-content-center">

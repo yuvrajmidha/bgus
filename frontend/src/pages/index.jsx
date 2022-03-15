@@ -144,7 +144,7 @@ class Landing extends Component {
             <div className="col-12 mt-2 mb-5 text-center text-dark display4">
               What do We deliver?
               </div>
-              <Fade duration={800} cascade distance={"8%"} bottom>
+              {/* <Fade duration={800} cascade distance={"8%"} bottom> */}
                 <div className="row mx-2">
                 <div className="col-xl-4 col-sm-6 my-2">
                     <Service className="col-xl-4 col-sm-6 my-2" service="Unified Communications As A Service"></Service>
@@ -167,7 +167,7 @@ class Landing extends Component {
                     <Service className="col-xl-4 col-sm-6 my-2" service="Wireless As A Service"></Service>
                   </div>
                   </div>
-                </Fade>
+                {/* </Fade> */}
             </div>
             <Box textAlign={["center","center","right"]}>
                 <Text fontSize="xl">We deliver 30+ services.</Text>

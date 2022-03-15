@@ -56,12 +56,12 @@ function about(){
           </Head>
           <Box pos="relative" bg="dark.500">
             <Image position="absolute" height="100%" zIndex="0" top={0} left={0} opacity=".3" objectFit="cover" width="100%" src="/assets/images/backgrounds/aboutus.jpg"></Image>
-            <Fade distance="5%" duration={500} top>
-              <Section textAlign="center" color="white" py={[16, 40]} my={0}>
+            {/* <Fade distance="5%" duration={500} top> */}
+              <Section transform="scale(1)" textAlign="center" color="white" zIndex={"100"} py={[16, 40]} my={0}>
                 <Heading size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Know More</Heading>
                 <Title fontSize={["44px", "64px"]}>About Us</Title>
               </Section>
-            </Fade>
+            {/* </Fade> */}
           </Box>
           {/* <Box mt="-48px">
             <Slider

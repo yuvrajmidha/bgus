@@ -49,18 +49,18 @@ function Solutions(props) {
                     alt={service?.title}
                     style={{opacity:"0.3"}}
                     />
-                            <Fade duration={700} delay={1000} bottom>
+                            <Fade duration={0} delay={0} bottom>
                                 <Flex textAlign={["left","left","left"]} alignContent={["left","left","left"]} justifyContent={["left","left","left"]}  align="center" py={4}>
                                     <SVG src={service?.icon} color="light.400" size="24px"></SVG>
                                     <Heading mx={6} fontSize={["18px","24px"]}>{service?.title}</Heading>
                                 </Flex>
                             </Fade>
-                            <Fade duration={700} delay={100} bottom>
+                            <Fade duration={0} delay={0} bottom>
                             <Flex textAlign={["left","left","left"]} justifyContent={["left","left","left"]}>
                                 <Heading fontSize={["40px", "48px","56px","64px"]} className="text-white">{service?.slogan}</Heading>
                             </Flex>
                             </Fade>
-                            <Fade duration={700} delay={150} bottom>
+                            <Fade duration={0} delay={0} bottom>
                                 {service?.image_below_title && <Box mt={4}>
                                     <Image src={service?.image_below_title} h={16}></Image>
                                 </Box>}
@@ -70,7 +70,7 @@ function Solutions(props) {
                                     Storage consolidation and virtualization, backup and recovery, archiving, and disaster recovery and storage management.
                                 </p>
                             </Fade> */}
-                            <Fade duration={700} delay={1000} top>
+                            <Fade duration={0} delay={0} top>
                                 <Flex justifyContent={["left","left","left"]}>
                                 <ButtonGroup mt={10} spacing={["10px","16px"]}>
                                     {pricing && <Button as={"a"} href={window.location.href + "#pricing"}  variant="solid" className="primary-btn" fontSize={["14px","18px"]} px={["18px","24px"]} colorScheme="primary" size="lg" >Explore Now</Button>}

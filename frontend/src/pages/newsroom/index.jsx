@@ -48,8 +48,8 @@ function Newsroom(){
         </Head>
         <Box  zIndex="10" pos="relative" bg="dark.500">
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0} style={{mixBlendMode:"overlay"}}  opacity="1" objectFit="cover" width="100%" src="/assets/images/backgrounds/tech.jpg"></Image>
-            <Fade distance="5%" duration={500} top>
-            <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
+            {/* <Fade distance="5%" duration={500} top> */}
+            <Section transform="scale(1)" position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
             <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">News from us</Heading>
             <Title zIndex="100" fontSize={["44px","64px"]}>Our Newsroom</Title>
             <Text zIndex="100" fontSize="xl" mt={2}>Get the latest updates from us.</Text>
@@ -70,7 +70,7 @@ function Newsroom(){
               </Flex>}
             </Box>
             </Section>
-            </Fade>
+            {/* </Fade> */}
           </Box>
         {/* <Section position="relative" textAlign="center" bg={["gray.200", "#ffffff00"]} py={[16, 24]} my={0}>
             <Image alt="" zIndex="-100" mt="-128px" style={{mixBlendMode:"darken"}} minH="448px" width="100%" objectFit="cover" left={0} position="absolute" top={0} src="/assets/images/backgrounds/dots_circle.jpg"></Image>
@@ -106,14 +106,14 @@ function Newsroom(){
                 {text}
                 </Button>)}
               </Flex> */}
-              <Fade duration={100} distance="5%" bottom>
+              {/* <Fade duration={100} distance="5%" bottom> */}
               <Tabs index={tabIndex} onChange={setTabIndex} align="center">
                 <TabList mb={8} borderBottomWidth={0}>
                   {["All", "Updates", "Case Studies"].map((text, index) => <Tab key={index} p={5} _selected={{ color: "primary.500", fontWeight:"600", borderBottomColor:"primary.500"}} >{text}</Tab>)}
                 </TabList>
                 <TabPanels>
                   <TabPanel>
-                    <Fade duration={300} cascade distance="5%" bottom>
+                    {/* <Fade duration={300} cascade distance="5%" bottom> */}
                       <Flex wrap="wrap">
                   {newsroom.map((blog, index) =>
                     <Box width={["100%","100%","50%","50%","33%"]} key={index} px={3} my={3} fontWeight="500">
@@ -139,11 +139,11 @@ function Newsroom(){
                         </Link>
                         </Box>)}
                         </Flex>
-                        </Fade>
+                        {/* </Fade> */}
                       
                   </TabPanel>
                   {["Updates", "Case Study"].map(text => <TabPanel>
-                  <Fade duration={300} cascade distance="5%" bottom>
+                  {/* <Fade duration={300} cascade distance="5%" bottom> */}
                       <Flex wrap="wrap">
                     {newsroom.map((blog, index) =>{if(blog.category === text) {
                       return <Box width={["100%","100%","50%","50%","33%"]} key={index} px={3} my={3} fontWeight="500">
@@ -170,11 +170,11 @@ function Newsroom(){
                         </Box>
                         }})}
                         </Flex>
-                        </Fade>
+                        {/* </Fade> */}
                   </TabPanel>)}
                 </TabPanels>
               </Tabs>
-              </Fade>
+              {/* </Fade> */}
               <Flex mt={8} wrap="wrap">
                 
               </Flex>

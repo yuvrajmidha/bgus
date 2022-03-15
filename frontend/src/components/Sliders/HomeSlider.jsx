@@ -187,7 +187,7 @@ function main(props) {
     return (
         <div>
               
-            <Box pos="relative" height={["440px","520px","720px"]}>
+            <Box pos="relative" bg="dark.500" height={["440px","520px","720px"]}>
                 {sliderInfo.map((slide, index) => 
                   {return slide.video === true ? <Box pos="absolute" key={index} top={0} left={0} opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} width="100%">
                           <video width="100%" height="100%" autoplay muted>

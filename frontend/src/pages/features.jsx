@@ -21,12 +21,12 @@ function features() {
       </Head>
       <Box  zIndex="10" pos="relative" bg="dark.500">
           <Image position="absolute" height="100%" zIndex="0" top={0} left={0}  opacity=".5" objectFit="cover" width="100%" src="/assets/images/backgrounds/features.jpg"></Image>
-          <Fade distance="5%" duration={500} top>
-          <Section position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
+          {/* <Fade distance="5%" duration={500} top> */}
+          <Section transform="scale(1)" position="relative" textAlign="center" color="white" py={[24, 32]} my={0}>
           <Heading zIndex="100" size="xs" letterSpacing={1.8} textAlign="center" color="primary.500" mb={4} textTransform="uppercase">Our Features</Heading>
           <Title zIndex="100" fontSize={["44px","64px"]}>Why BG Unified Solutions</Title>
           </Section>
-          </Fade>
+          {/* </Fade> */}
       </Box>
       <RenderSection
         body={[

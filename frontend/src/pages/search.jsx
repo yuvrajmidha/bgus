@@ -35,8 +35,8 @@ function search(props) {
         <Head>
           <title>Search | BG Unified Solutions</title>
         </Head>
-        <Fade duration={500} distance="10%"  top>
-         <Box mt={30} mb={2} pb="10px" pt={["30px","50px","72px"]}>
+        {/* <Fade duration={500} distance="10%"  top> */}
+         <Box transform="scale(1)" mt={30} mb={2} pb="10px" pt={["30px","50px","72px"]}>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-10 offset-xl-1">
@@ -48,16 +48,16 @@ function search(props) {
                 </div>
             </div>
          </Box>
-         </Fade>
+         {/* </Fade> */}
        <div className="container">
            <div className="row">
                <div className="col-xl-10 offset-xl-1">
-               <Fade duration={400} delay={300} top>
+               <Fade duration={400} delay={0} top>
                     {text === "" && <Heading size="sm" mt={6} zIndex={100} className="text-primary" textTransform="uppercase" mb={2}>Most Popular</Heading>}
                 </Fade>
                 {text === "" && servicesArray.map((service, index) => {
                     if(service[1].popular === true) return (
-                        <Fade key={index} duration={300} distance="4%" delay={300} left>
+                        <Fade key={index} duration={300} distance="4%" delay={0} left>
                             <Box mt={3} p={8} className="rounded-8 border">
                                 <Heading size="lg" mb={2}>{service[1].title}</Heading>
                                 <Text fontSize="md" className="truncate-ellipsis">
