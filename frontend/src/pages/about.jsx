@@ -9,7 +9,7 @@ import Section from "../pageBuilder/Section";
 import Row from "../pageBuilder/Row";
 import Title from "../pageBuilder/Title";
 import MyCount from "../components/Countup/main";
-import Link from "next/link";
+import Link from "../components/AnchorLink";
 import skills from "../database/skills";
 import timeline from "../database/timeline";
 import Container from "../pageBuilder/Container";

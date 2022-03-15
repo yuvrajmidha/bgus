@@ -15,7 +15,7 @@ import {Icon,
     ModalCloseButton,
     Button} from "@chakra-ui/react"
 import Fade from "react-reveal/Fade"
-import Link from "next/link"
+import Link from "../AnchorLink"
 import services from '../Services/services';
 import { FaSearch } from 'react-icons/fa';
 

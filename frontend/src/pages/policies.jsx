@@ -7,7 +7,7 @@ import { Grid, Box,Icon, Heading, Breadcrumb,
 
 import Fade from "react-reveal/Fade";
 import Head from 'next/head';
-import Link from 'next/link';
+import Link from '../components/AnchorLink';
 import Body from '../pageBuilder/Body';
 import policy from "../pageBuilder/pages/privacypolicy/levels"
 import Title from '../pageBuilder/Title';

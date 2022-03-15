@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button } from "@chakra-ui/react";
-import Link from "next/link"
+import Link from "../AnchorLink"
 import SVG from "../svg/SVG";
 import { FaArrowRight } from "react-icons/fa";
 //props.icon is an element (can be image,icon etc.)
@@ -26,7 +26,7 @@ function CardWithIcon(props) {
   }
   return (
 
-    <Link href="/solutions/[name]" as={`${props.link}`}>
+    <Link href={`${props.link}`}>
       <Box pt="64px" h="100%">
         <Box h="100%" className="card-with-icon shadow-lg align-items-center d-flex flex-column bg-white rounded p-3">
           <div className="row iconbox mb-3">{iconbox}</div>
@@ -35,7 +35,7 @@ function CardWithIcon(props) {
             {props.children}
           </div>
           <div className="row mx-3 my-3">
-            <Link href="/solutions/[name]" as={`${props.link}`}>
+            <Link href={`${props.link}`}>
               <Button py={8} px={12} bg="dark.500" color="white" _hover={{ color: "white", bg: "dark.400" }} borderRadius="0px 12px" rightIcon={<FaArrowRight />}>
                 Learn More
             </Button>

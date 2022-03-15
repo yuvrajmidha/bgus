@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import services from "../../database/services"
 import Head from "next/head";
-import Link from "next/link";
+import Link from "../../components/AnchorLink";
 import Conclusion from "../../components/footer/conclusion"
 import RenderSection from "../../pageBuilder/RenderSection";
 import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/react"

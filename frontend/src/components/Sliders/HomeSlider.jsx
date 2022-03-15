@@ -4,7 +4,7 @@ import React, { memo, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Controller, Navigation} from 'swiper';
 import Section from '../../pageBuilder/Section';
-import Link from 'next/link';
+import Link from '../AnchorLink';
 import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 
 const sliderInfo = [

@@ -5,7 +5,7 @@ import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import TESTIMONIALS from "../database/testimonials";
 import newsroom from "../database/newsroom"
 import Fade from "react-reveal/Fade";
-import Link from "next/link";
+import Link from "../components/AnchorLink";
 import Section from "../pageBuilder/Section";
 import SVG from "../components/svg/SVG";
 import Service from "../components/cards/Service";
@@ -23,7 +23,7 @@ import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 const news = (blog) => {
   return (
     <Box width={["100%", "100%", "50%", "50%", "33%"]} px={3} my={3} fontWeight="500">
-      <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}>
+      <Link href={"/newsroom/" + blog.link}>
         <a>
           <CardWithImage
             src={blog.image}

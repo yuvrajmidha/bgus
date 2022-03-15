@@ -2,7 +2,7 @@ import React from "react";
 import { Icon,Image, Heading, Button, Box } from "@chakra-ui/react";
 import Slider from "react-flickity-component";
 import Fade from "react-reveal/Fade";
-import Link from "next/link";
+import Link from "../AnchorLink";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 class CaseStudy extends React.Component {
@@ -48,7 +48,7 @@ class CaseStudy extends React.Component {
           <div className="content text-center text-secondary mt-2">
             {this.props.caseStudyDetails[this.state.i].description}
           </div>
-          <Link href="/newsroom/[bid]" as={"/newsroom/"+this.props.caseStudyDetails[this.state.i].link}><a className="mt-4 link">Read More</a>
+          <Link href={"/newsroom/"+this.props.caseStudyDetails[this.state.i].link}><a className="mt-4 link">Read More</a>
           </Link>
         </Box>
         <Box boxSize="64px" onClick={this.prev} className={this.state.i==0 ? "left-nav bg-disabled" : "left-nav bg-primary primary-btn"} mt="-32px" position="absolute" top="50%" p="20px" left="-32px"><FaArrowLeft color="white" size="24px" /></Box>

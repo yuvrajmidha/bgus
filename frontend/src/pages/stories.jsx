@@ -6,7 +6,7 @@ import Title from "../pageBuilder/Title";
 import Testimonial from "../components/TestimonialCard/Stories";
 import TESTIMONIALS from "../database/testimonials";
 import Row from "../pageBuilder/Row";
-import Link from "next/link";
+import Link from "../components/AnchorLink";
 import { FaChevronRight } from "react-icons/fa";
 function main() {
     return <>

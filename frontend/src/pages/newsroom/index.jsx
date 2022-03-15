@@ -2,7 +2,7 @@ import React, { Component,useEffect } from "react";
 import Head from "next/head";
 import CardWithImage from "../../components/cards/CardWithImage";
 import newsroom from "../../database/newsroom"
-import Link from "next/link";
+import Link from "../../components/AnchorLink";
 import Fade from 'react-reveal/Fade';
 import Section from "../../pageBuilder/Section";
 import Title from "../../pageBuilder/Title";
@@ -60,7 +60,7 @@ function Newsroom(){
               </InputGroup>
               {search && <Flex  pos="absolute" zIndex="1000"  mt={4} justifyContent="center" width="100%">
                   <Box maxH={"300px"} overflowY="scroll" bg="white" rounded="md" width={["100%","100%","520px"]} boxShadow="lg">
-                    {data.articles.length > 0 && data.articles.map((blog, index) => (  <Link key={index} href="/newsroom/[bid]" as={"/newsroom/" + blog.link}>
+                    {data.articles.length > 0 && data.articles.map((blog, index) => (  <Link key={index} href={"/newsroom/" + blog.link}>
                         <Box borderBottomWidth={1} textAlign={"left"} className="hover-effect" p={3}>
                           <Heading size="sm" mb={1} textAlign="left" color="dark.500"  >{blog.title}</Heading>
                           <Text mt={0} color="gray.400">{blog.description}</Text>
@@ -117,7 +117,7 @@ function Newsroom(){
                       <Flex wrap="wrap">
                   {newsroom.map((blog, index) =>
                     <Box width={["100%","100%","50%","50%","33%"]} key={index} px={3} my={3} fontWeight="500">
-                        <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
+                        <Link href={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
                           title={blog.headertitle || blog.title}
@@ -147,7 +147,7 @@ function Newsroom(){
                       <Flex wrap="wrap">
                     {newsroom.map((blog, index) =>{if(blog.category === text) {
                       return <Box width={["100%","100%","50%","50%","33%"]} key={index} px={3} my={3} fontWeight="500">
-                        <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a>
+                        <Link href={"/newsroom/" + blog.link}><a>
                           <CardWithImage
                           src={blog.image}
                           title={blog.headertitle || blog.title}

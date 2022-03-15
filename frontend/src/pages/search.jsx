@@ -4,7 +4,7 @@ import {Box, Input, InputGroup, Text, Heading, InputLeftElement, Icon} from "@ch
 import Fade from "react-reveal/Fade";
 import {dynamicSearch} from "../../public/assets/js/searchFunctions"
 import services from "../database/services";
-import Link from "next/link";
+import Link from "../components/AnchorLink";
 import {useRouter} from "next/router";
 import { SearchIcon } from '@chakra-ui/icons'
 
@@ -63,7 +63,7 @@ function search(props) {
                                 <Text fontSize="md" className="truncate-ellipsis">
                                 {service[1].description}
                                 </Text>
-                                <Link href="/solutions/[name]" as={`/solutions/${service[0]}`}><a onClick={props.toggle} className="link text-secondary">Learn More</a></Link>
+                                <Link href={`/solutions/${service[0]}`}><a onClick={props.toggle} className="link text-secondary">Learn More</a></Link>
                             </Box>
                         </Fade>
                     )
@@ -77,7 +77,7 @@ function search(props) {
                         <Text fontSize="md" className="truncate-ellipsis">
                             {service[1].description}
                         </Text>
-                        <Link href="/solutions/[name]" as={`/solutions/${service[0]}`}><a onClick={props.toggle} className="link text-secondary">Learn More</a></Link>
+                        <Link href={`/solutions/${service[0]}`}><a onClick={props.toggle} className="link text-secondary">Learn More</a></Link>
                     </Box>
                     </Fade>
                 ))}
@@ -88,7 +88,7 @@ function search(props) {
                     <Text fontSize="md" overflow="hidden">
                         {blog.description}
                     </Text>
-                    <Link href="/newsroom/[bid]" as={"/newsroom/" + blog.link}><a onClick={props.toggle} className="link text-secondary">Read More</a></Link>
+                    <Link href={"/newsroom/" + blog.link}><a onClick={props.toggle} className="link text-secondary">Read More</a></Link>
                 </Box>
                 ))}
                 {(data.articles.length === 0 && data.services.length === 0 && text != "") && 

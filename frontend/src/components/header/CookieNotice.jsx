@@ -3,7 +3,7 @@ import Container from '../../pageBuilder/Container';
 import { Flex, Box, Text, Button, Collapse } from '@chakra-ui/react';
 import Fade from "react-reveal/Fade"
 import cookie from 'react-cookies'
-import Link from 'next/link';
+import Link from '../AnchorLink';
 import { render } from 'react-dom';
 import { IoMdClose } from 'react-icons/io';
 

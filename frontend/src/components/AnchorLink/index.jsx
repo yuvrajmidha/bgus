@@ -1,8 +1,8 @@
 import { Link } from '@chakra-ui/react'
 import React from 'react'
 
-export default function index({as, href, ...props}) {
+export default function index({as, href, children}) {
   return (
-    <Link href={props.as ? props.as : props.href} {...props} />
+    <a href={`${href}`}>{children}</a>
   )
 }

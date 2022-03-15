@@ -3,7 +3,7 @@ import Slider from "react-flickity-component";
 import solutions from "../../database/services";
 import Fade from 'react-reveal/Fade';
 import Head from "next/head";
-import Link from "next/link";
+import Link from "../../components/AnchorLink";
 import Section from "../../pageBuilder/Section";
 import Title from "../../pageBuilder/Title";
 import { Heading, Text, Box, Drawer,
@@ -141,7 +141,7 @@ function OurSolutions(){
                         <Box p={8}>
                             <Heading size="lg" textAlign={"left"} fontFamily="Nexa Bold">{service[1].title}</Heading>
                             <Text textAlign={"left"} mt={2} >{service[1].description}</Text>
-                            <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" justifyContent={"left"} w="100%" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
+                            <Link href={"/solutions/" + service[0]}><Button as="a" justifyContent={"left"} w="100%" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
                         </Box>
                     </Flex>
                     </Box>
@@ -159,7 +159,7 @@ function OurSolutions(){
                         <Box p={8}>
                             <Heading size="lg" fontFamily="Nexa Bold">{service[1].title}</Heading>
                             <Text mt={2} >{service[1].description}</Text>
-                            <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
+                            <Link href={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
                         </Box>
                     </Flex>
                     </Box>
@@ -177,7 +177,7 @@ function OurSolutions(){
                         <Box p={8}>
                             <Heading size="lg" fontFamily="Nexa Bold">{service[1].title}</Heading>
                             <Text mt={2} >{service[1].description}</Text>
-                            <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
+                            <Link href={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
                         </Box>
                     </Flex>
                     </Box>
@@ -195,7 +195,7 @@ function OurSolutions(){
                         <Box p={8}>
                             <Heading size="lg" fontFamily="Nexa Bold">{service[1].title}</Heading>
                             <Text mt={2} >{service[1].description}</Text>
-                            <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
+                            <Link href={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
                         </Box>
                     </Flex>
                     </Box>
@@ -213,7 +213,7 @@ function OurSolutions(){
                         <Box p={8}>
                             <Heading size="lg" fontFamily="Nexa Bold">{service[1].title}</Heading>
                             <Text mt={2} >{service[1].description}</Text>
-                            <Link href="/solutions/[name]" as={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
+                            <Link href={"/solutions/" + service[0]}><Button as="a" mt={3} px={0} bg="white" className="link" _hover={{color:"primary.500", bg:"white"}} rightIcon={<FaArrowRight />}>Learn More</Button></Link>
                         </Box>
                     </Flex>
                     </Box>

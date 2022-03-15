@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex,Button, Text, Heading } from "@chakra-ui/react";
-import Link from "next/link";
+import Link from "../AnchorLink";
 import FeedbackForm from "../Feedback/main";
 import ErrorForm from "../ReportanError/main";
 import Container from "../../pageBuilder/Container";

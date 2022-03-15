@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { IoIosMenu } from "react-icons/io";
 import Services from "../Services/services";
-import Link from "next/link";
+import Link from "../AnchorLink";
 import {
   Button,
   Box,

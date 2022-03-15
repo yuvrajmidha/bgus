@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade"
 import Section from '../../pageBuilder/Section';
 import Container from '../../pageBuilder/Container';
 import {Image, Button, Heading, Box, Flex, Text} from "@chakra-ui/react";
-import Link from "next/link"
+import Link from "../AnchorLink"
 
 function Conclusion({align="left", title="Let's get IT done.", description, explore=true, contact=false, ...props}) {
     return (

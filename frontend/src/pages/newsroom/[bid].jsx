@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Fade from 'react-reveal/Fade';
 import blogs from "../../database/newsroom";
 import Head from "next/head";
-import Link from "next/link";
+import Link from "../../components/AnchorLink";
 import Section from "../../pageBuilder/Section";
 import Title from "../../pageBuilder/Title";
 import Body from "../../pageBuilder/Body";

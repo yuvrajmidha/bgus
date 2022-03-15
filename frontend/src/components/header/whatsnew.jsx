@@ -1,6 +1,6 @@
 import React from "react";
 import { Image,Heading, Flex, Icon, Box } from "@chakra-ui/react";
-import Link from "next/link";
+import Link from "../AnchorLink";
 import { FaArrowRight } from "react-icons/fa";
 
 function WhatsNew(props) {
@@ -19,7 +19,7 @@ function WhatsNew(props) {
         width="80px"
       ></Image>
       <Box onClick={props.onClick}>
-        <Link  href="/newsroom/[bid]" as={props.link}><a className="link"><Heading mx={5} fontFamily="Nexa Bold" fontSize="md">{props.heading}{" "}<FaArrowRight /></Heading></a></Link>
+        <Link  href={props.link}><a className="link"><Heading mx={5} fontFamily="Nexa Bold" fontSize="md">{props.heading}{" "}<FaArrowRight /></Heading></a></Link>
       </Box>
     </Flex>
   );

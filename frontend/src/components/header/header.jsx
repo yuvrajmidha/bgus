@@ -19,6 +19,7 @@ import services from "../../database/services"
 import { FaInfoCircle, FaNewspaper, FaCommentAlt, FaBriefcase, FaSearch } from "react-icons/fa"
 import { IoIosCall } from "react-icons/io"
 import newsroom from "../../database/newsroom"
+import Hyperlink from '../AnchorLink';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Router from 'next/router';
