@@ -21,7 +21,7 @@ import { IoIosCall } from "react-icons/io"
 import newsroom from "../../database/newsroom"
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
-import Hyperlink from 'next/link';
+import Hyperlink from '../../components/AnchorLink';
 import Router from 'next/router';
 import Container from '../../pageBuilder/Container';
 import CookieNotice from './CookieNotice';
@@ -101,14 +101,12 @@ function header(props) {
                                                         <TabPanel key={1}>
                                                             <Flex wrap="wrap" p={6}>
                                                                 {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map((service, index) => (
-                                                                    <Hyperlink key={index} href="/solutions/[name]" as={"/solutions/" + service[0]}>
-                                                                        <Link onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
+                                                                        <Link href={"/solutions/" + service[0]} onClick={onClose2} my={1} width="33%" fontSize="md" px={3} fontWeight="600">
                                                                             <Flex align="center" p={3} className="hover-effect">
                                                                                 <SVG hex={service[1].color} size="24px" src={service[1].icon} />
                                                                                 <Box textAlign={"left"} as="span" ml={3}>{service[1].title}</Box>
                                                                             </Flex>
                                                                         </Link>
-                                                                    </Hyperlink>
                                                                 ))}
                                                             </Flex>
                                                         </TabPanel>
