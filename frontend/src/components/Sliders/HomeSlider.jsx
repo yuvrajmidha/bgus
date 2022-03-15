@@ -9,8 +9,8 @@ import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 
 const sliderInfo = [
     {
-      title: <p><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a reality</p>,
-      imgSrc: "/assets/videos/flyover.gif",
+      title: <span><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a reality</span>,
+      imgSrc: "/assets/images/backgrounds/bgus_slide 1.jpg",
       subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -21,7 +21,7 @@ const sliderInfo = [
     },
     {
       title: "Launched our services in India",
-      imgSrc: "/assets/videos/india.gif",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 2.jpg",
       subTitle: "Things are moving very fast in India and Singapore. We anticipate having 2 racks in each POP in the next 6-12 months.",
       btnPrimaryText: "Read More",
       btnSecondaryText: "Get a quote",
@@ -32,7 +32,7 @@ const sliderInfo = [
     },
     {
       title: "Discover Data Storage Solutions built on Trust, Affordability & Ease",
-      imgSrc: "/assets/images/backgrounds/landing-seagate.png",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 3.jpg",
       subTitle: "BG Unified is proud to announce an executive partnership with Seagate, a technology leader for over 40 years.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -48,8 +48,8 @@ const sliderInfo = [
     
     // },
     {
-      title: <p>Cybersecurity meets Artificial Intelligence</p>,
-      imgSrc: "/assets/videos/ai.gif",
+      title: "Cybersecurity meets Artificial Intelligence",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 4.jpg",
       subTitle: <span>Something coming in the next few months which will be one of the best as a service offering of BG Unified Solutions in the AI - Artificial Intelligence space.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-in-AI-Space",
@@ -58,47 +58,52 @@ const sliderInfo = [
     
     },
     {
-      title: <p>Highly Redundant SIPaaS with Vocus Communications</p>,
-      imgSrc: "/assets/images/backgrounds/landing-7.png",
+      title: "Highly Redundant SIPaaS with Vocus Communications",
+      imgSrc: "/assets/images/services/sbn.jpg",
       subTitle: <span>We have recently partnered up with <b className="text-primary">Vocus Communications</b> for offering SIPaaS with PREMIUM SIP Channels.
       The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.</span>,
       btnSecondaryText: "Read More",
-      btnSecondaryLink: "/stories"
+      btnSecondaryLink: "/stories",
+      filter: "brightness(.4);"
     },
     {
-      title: <p>Creating Impact Together</p>,
-      imgSrc: "/assets/images/backgrounds/city.png",
+      title: "Creating Impact Together",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 6.jpg",
       subTitle: <span><b className="text-primary">Forcepoint</b> working collaboratively with BG Unified Solutions to collaboratively offer CDR Zero Trust Content to the end customers in a bundled offering for Managed Firewall As A Service.</span>,
       btnSecondaryText: "Read More",
-      btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-working-collaboratively"
+      btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-working-collaboratively",
+      filter: "brightness(.4);"
     
     },
     {
-      title: <p>Expanding Global Footprints</p>,
-      imgSrc: "/assets/images/backgrounds/landing-3.png",
+      title: "Expanding Global Footprints",
+      imgSrc: "/assets/images/backgrounds/backup.jpg",
       subTitle: <span>Point of presence at state of the art Data center by <b className="text-primary">Tata Communication Limited</b> located right in the heart of India, GK 1, New Delhi</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
-      btnSecondaryLink: "/contact"
+      btnSecondaryLink: "/contact",
+      filter: "brightness(.6);"
     },
     {
-      title: <p>SBSS university website running on our infrastructure</p>,
-      imgSrc: "/assets/images/backgrounds/landing-8.png",
+      title: "SBSS university website running on our infrastructure",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 8.jpg",
       subTitle: <span>Shaheed Bhagat Singh State University Website running on BGUS' Infrastructures (IaaS). We promise to deliver 100% uptime.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
-      btnSecondaryLink: "/contact"
+      btnSecondaryLink: "/contact",
+      filter: "brightness(.3);"
     },
     {
-      title: <p>Connectivity is the key to a secured communication</p>,
-      imgSrc: "/assets/images/backgrounds/landing-1.png",
+      title: "Connectivity is the key to a secured communication",
+      imgSrc: "/assets/images/services/webhosting.jpg",
       subTitle: <span>On the way to become an authorized ISP in Delhi Region with a vision to become an authorized national ISP in India.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
-      btnSecondaryLink: "/contact"
+      btnSecondaryLink: "/contact",
+      filter: "brightness(.5);"
     },
  
   ]
@@ -159,19 +164,25 @@ const RollerNumbers = () => {
 function main(props) {
     var interval = null;
     const [animate, setAnimation] = useState(0);
-    const [isActive, setIsActive] = useState(true);
+    const [movement, setMovement] = useState(1);
 
-    function stop() {
-      setIsActive(false);
+    function move(i) {
+      setAnimation(i); 
+      setMovement('off');
     }
-    React.useEffect(() => {
-      interval = setInterval(() => {
-        var memory = animate + 1
-        if(memory == sliderInfo.length) memory = 0
-        setAnimation(animate => animate + 1)
-        
-      }, 15000)
-    }, [])
+
+    const timer = () => setAnimation(animate + 1);
+
+    React.useEffect(
+        () => {
+            if (animate < 0 || movement === 'off') {
+                return;
+            }
+            const id = setInterval(timer, 5000);
+            return () => clearInterval(id);
+        },
+        [animate]
+    );
     return (
         <div>
               
@@ -185,15 +196,15 @@ function main(props) {
                        <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} filter={slide.filter} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
                   })}
 
-                  {<Image transition="1s" opacity={sliderInfo[animate]?.divider === true ? "1" : "0"} src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>}
+                  {/* {<Image transition="1s" opacity={sliderInfo[animate]?.divider === true ? "1" : "0"} src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>} */}
                 
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
                 <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>
                 <Flex my={0}>
                   <Box display={["none","none","block"]} pos="relative" minW="180px" color="white">
                   {sliderInfo.map((slide, index) =>
-                    <Box p={3}>
-                      <Heading key={index} cursor="pointer" onClick={() => {setAnimation(index); clearInterval(interval)}} transition=".6s" fontSize={animate % sliderInfo.length === index ? "28px" : "18px"} opacity={animate % sliderInfo.length === index ? "1" : ".4"} fontFamily="Nexa Bold">0{index + 1}</Heading>
+                    <Box key={index} p={3}>
+                      <Heading cursor="pointer" onClick={() => {move(index)}} transition=".6s" fontSize={animate % sliderInfo.length === index ? "28px" : "18px"} opacity={animate % sliderInfo.length === index ? "1" : ".4"} fontFamily="Nexa Bold">0{index + 1}</Heading>
                     </Box>
                   )}
                   {/* <Box height="80px" width="80px" style={{perspective:"160px"}}>

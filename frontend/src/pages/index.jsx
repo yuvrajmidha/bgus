@@ -220,12 +220,12 @@ class Landing extends Component {
                   <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold">Guaranteed Transactional Security</Heading>
                 </Feature3>
                 <Feature3 bg="purple.600" icon="/assets/images/icons/color/graph.svg">
-                  <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Title textAlign="left" fontSize="40px">100%</Title>Success<br />Ratio</Heading>
+                  <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Text textAlign="left" fontSize="40px">100%</Text>Success<br />Ratio</Heading>
                 </Feature3>
               </Box>
               <Box width={["100%", "100%", "50%"]} px={3}>
                 <Feature3 mt={[0, 0, 24]} bg="light.500" color="dark.500" icon="/assets/images/icons/color/team.svg">
-                  <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Title textAlign="left" fontSize="40px" color="yellow.400">40+</Title>Trusted<br />Partners</Heading>
+                  <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold"><Text textAlign="left" fontSize="40px" color="yellow.400">40+</Text>Trusted<br />Partners</Heading>
                 </Feature3>
                 <Feature3 bg="blue.800" icon="/assets/images/icons/color/rocket.svg">
                   <Heading px={8} pt={8} size="md" fontFamily="Nexa Bold">Completely Scalable Solutions</Heading>

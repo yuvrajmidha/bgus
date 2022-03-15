@@ -98,7 +98,7 @@ function header(props) {
                                                     </TabList>
 
                                                     <TabPanels>
-                                                        <TabPanel>
+                                                        <TabPanel key={1}>
                                                             <Flex wrap="wrap" p={6}>
                                                                 {servicesArray.filter(service => service[1].category === "IT Infrastructural Services").map((service, index) => (
                                                                     <Hyperlink key={index} href="/solutions/[name]" as={"/solutions/" + service[0]}>
@@ -112,7 +112,7 @@ function header(props) {
                                                                 ))}
                                                             </Flex>
                                                         </TabPanel>
-                                                        <TabPanel>
+                                                        <TabPanel key={2}>
                                                             <Flex wrap="wrap" p={6}>
                                                                 {servicesArray.filter(service => service[1].category === "Network Services").map((service, index) => (
                                                                     <Hyperlink key={index} href="/solutions/[name]" as={"/solutions/" + service[0]}>
@@ -126,7 +126,7 @@ function header(props) {
                                                                 ))}
                                                             </Flex>
                                                         </TabPanel>
-                                                        <TabPanel>
+                                                        <TabPanel key={3}>
                                                             <Flex wrap="wrap" p={6}>
                                                                 {servicesArray.filter(service => service[1].category === "Cyber Security Services").map((service, index) => (
                                                                     <Hyperlink key={index} href="/solutions/[name]" as={"/solutions/" + service[0]}>
@@ -140,7 +140,7 @@ function header(props) {
                                                                 ))}
                                                             </Flex>
                                                         </TabPanel>
-                                                        <TabPanel>
+                                                        <TabPanel key={4}>
                                                             <Flex wrap="wrap" p={6}>
                                                                 {servicesArray.filter(service => service[1].category === "Collaborative Services").map((service, index) => (
                                                                     <Hyperlink key={index} href="/solutions/[name]" as={"/solutions/" + service[0]}>
@@ -154,7 +154,7 @@ function header(props) {
                                                                 ))}
                                                             </Flex>
                                                         </TabPanel>
-                                                        <TabPanel>
+                                                        <TabPanel key={5}>
                                                             <Flex wrap="wrap" p={6}>
                                                                 {servicesArray.filter(service => service[1].category === "Professional Services").map((service, index) => (
                                                                     <Hyperlink key={index} href="/solutions/[name]" as={"/solutions/" + service[0]}>
