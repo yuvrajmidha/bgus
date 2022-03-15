@@ -35,6 +35,10 @@ app.use('/api', router);
 app.use('/assets', express.static('frontend/out/assets'));
 app.use('/_next', express.static('frontend/out/_next'));
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/frontend/out/index.html')
+})
+
 app.use((req, res, next) => {
     var url = req.url.split('?')[0].split('/');
     var _path = url[0] + (url[1] === null || url[1] === '' ? '' : url[1])
@@ -62,9 +66,10 @@ app.get('/:name', (req, res) => {
     res.sendFile(__dirname + '/frontend/out/' + req.params.name + '.html')
 })
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/frontend/out/index.html')
-})
+
+
+
+
 
 app.use((error, req, res, next) => {
     res.status(error.status || 500);
