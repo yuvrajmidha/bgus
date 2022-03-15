@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { useRouter } from "next/router";
 import services from "../../database/services"
 import Head from "next/head";
 import Link from "next/link";
@@ -9,13 +8,18 @@ import { Box, Button, ButtonGroup, Image, Heading, Flex } from "@chakra-ui/react
 import Fade from "react-reveal/Fade"
 import SVG from "../../components/svg/SVG";
 import Section from "../../pageBuilder/Section";
+import { useRouter } from 'next/router';
 
 // onClick={() => {
 //     window.scrollTo(0, document.getElementById("pricing").offsetTop - 80)
 // }}
 
 function Solutions(props) {
-    const service = services[props.name];
+
+    const router = useRouter()
+    const { name } = router.query
+
+    const service = services[name];
     const [pricing, setPricing] = React.useState(false)
 
     React.useEffect(() => {
@@ -30,30 +34,30 @@ function Solutions(props) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-                <meta name ="description" content = {service.description}>
+                <meta name ="description" content = {service?.description}>
                 </meta>
-                <meta property="og:title" content={`${service.slogan} - ${service.title} | BG Unified Solutions`} key="title" />
-                <meta property="og:description" content={service.description}></meta>
-                <title>{service.slogan} - {service.title} | BG Unified Solutions</title>
+                <meta property="og:title" content={`${service?.slogan} - ${service?.title} | BG Unified Solutions`} key="title" />
+                <meta property="og:description" content={service?.description}></meta>
+                <title>{service?.slogan} - {service?.title} | BG Unified Solutions</title>
             </Head>
 
                      
                 <Section color="white" py={["6rem","8rem","10rem"]} my={0} bg="dark.500" pos="relative">
                 <img
                     className="bg-image"
-                    src={service.bgImage}
-                    alt={service.title}
+                    src={service?.bgImage}
+                    alt={service?.title}
                     style={{opacity:"0.3"}}
                     />
                             <Fade duration={700} delay={1000} bottom>
                                 <Flex textAlign={["left","left","left"]} alignContent={["left","left","left"]} justifyContent={["left","left","left"]}  align="center" py={4}>
-                                    <SVG src={service.icon} color="light.400" size="24px"></SVG>
-                                    <Heading mx={6} fontSize={["18px","24px"]}>{service.title}</Heading>
+                                    <SVG src={service?.icon} color="light.400" size="24px"></SVG>
+                                    <Heading mx={6} fontSize={["18px","24px"]}>{service?.title}</Heading>
                                 </Flex>
                             </Fade>
                             <Fade duration={700} delay={100} bottom>
                             <Flex textAlign={["left","left","left"]} justifyContent={["left","left","left"]}>
-                                <Heading fontSize={["40px", "48px","56px","64px"]} className="text-white">{service.slogan}</Heading>
+                                <Heading fontSize={["40px", "48px","56px","64px"]} className="text-white">{service?.slogan}</Heading>
                             </Flex>
                             </Fade>
                             <Fade duration={700} delay={150} bottom>
@@ -75,13 +79,13 @@ function Solutions(props) {
                                 </Flex>
                             </Fade>
                   </Section>
-            {service.sections && service.sections.map((section, index) => (
+            {service?.sections && service?.sections.map((section, index) => (
                 <RenderSection key={index} {...section}></RenderSection>
             ))}
             <Box bg="light.400" mt="128px" px="16px" py={6}>
-            {service.conclusion && <Conclusion mt="-128px" align="center" title="Get Started Now" description={service.conclusion} explore={false} contact></Conclusion>}
+            {service?.conclusion && <Conclusion mt="-128px" align="center" title="Get Started Now" description={service?.conclusion} explore={false} contact></Conclusion>}
             </Box>
-            {service.relatedService && <RenderSection
+            {service?.relatedService && <RenderSection
                 title="Related Services"
                 bg="light.400"
                 my={0}
@@ -92,17 +96,17 @@ function Solutions(props) {
                     {
                         width: ["100%", "100%", "50%", "33%"],
                         type: "service",
-                        data: service.relatedService[0],
+                        data: service?.relatedService[0],
                     },
                     {
                         width: ["100%", "100%", "50%", "33%"],
                         type: "service",
-                        data: service.relatedService[1],
+                        data: service?.relatedService[1],
                     },
                     {
                         width: ["100%", "100%", "50%", "33%"],
                         type: "service",
-                        data: service.relatedService[2],
+                        data: service?.relatedService[2],
                     },
                 ]}
             />}
@@ -110,21 +114,27 @@ function Solutions(props) {
     );
 }
 
-// export async function getStaticPaths() {
-//     const ServiceNames = Object.keys(services)
-//     return {
-//         paths: ServiceNames.map((x)=>({params:{name:x}})),
-//         fallback: false // See the "fallback" section below
-//     };
-// }
-export async function getServerSideProps({query}) {
-    const { name } = query;
-
+export async function getStaticPaths() {
+    const ServiceNames = Object.keys(services)
     return {
-        props: {
-            name
-        },
-    }
+        paths: ServiceNames.map((x)=>({params:{name:x}})),
+        fallback: false // See the "fallback" section below
+    };
 }
+export async function getStaticProps() {
+    return {
+      props: {
+      },
+    }
+  }
+// export async function getServerSideProps({query}) {
+//     const { name } = query;
+
+//     return {
+//         props: {
+//             name
+//         },
+//     }
+// }
 
 export default Solutions;

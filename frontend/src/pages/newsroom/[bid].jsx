@@ -25,7 +25,7 @@ function Blogs() {
     }
   })[0] || { content: "" }; //Filter and get the current blog object
 
-  const imgalt=blog.imgalt;
+  const imgalt = blog.imgalt;
 
 
   return (
