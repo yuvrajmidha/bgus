@@ -31,13 +31,14 @@ const sliderInfo = [
       filter: "brightness(.4);"
     },
     {
-      title: "Discover Data Storage Solutions built on Trust, Affordability & Ease",
-      imgSrc: "/assets/images/backgrounds/bgus_slide 3.jpg",
+      title: "Discover Data Storage Solutions built on Trust & Ease",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 4.jpg",
       subTitle: "BG Unified is proud to announce an executive partnership with Seagate, a technology leader for over 40 years.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
-      btnSecondaryLink: "/contact"
+      btnSecondaryLink: "/contact",
+      filter: "brightness(.4);"
     },
     // {
     //   title: <p>Creating Impact Together</p>,
@@ -49,7 +50,7 @@ const sliderInfo = [
     // },
     {
       title: "Cybersecurity meets Artificial Intelligence",
-      imgSrc: "/assets/images/backgrounds/bgus_slide 4.jpg",
+      imgSrc: "/assets/images/backgrounds/bgus_slide 3.jpg",
       subTitle: <span>Something coming in the next few months which will be one of the best as a service offering of BG Unified Solutions in the AI - Artificial Intelligence space.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-in-AI-Space",
@@ -58,9 +59,9 @@ const sliderInfo = [
     
     },
     {
-      title: "Highly Redundant SIPaaS with Vocus Communications",
+      title: "Highly Redundant SIPaaS with Vocus",
       imgSrc: "/assets/images/services/sbn.jpg",
-      subTitle: <span>We have recently partnered up with <b className="text-primary">Vocus Communications</b> for offering SIPaaS with PREMIUM SIP Channels.
+      subTitle: <span>We are offering SIPaaS with PREMIUM SIP Channels.
       The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/stories",
@@ -178,7 +179,7 @@ function main(props) {
             if (animate < 0 || movement === 'off') {
                 return;
             }
-            const id = setInterval(timer, 5000);
+            const id = setInterval(timer, 15000);
             return () => clearInterval(id);
         },
         [animate]
