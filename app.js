@@ -32,7 +32,10 @@ connectionDB()
 //routes middleware
 app.use('/api', router);
 
-app.use(express.static('frontend/out'))
+app.use('/assets', express.static('frontend/out/assets'));
+app.use('/_next', express.static('frontend/out/_next'));
+
+app.use(['/:url', '/'], express.static('frontend/out'))
 
 
 module.exports =app 
