@@ -25,7 +25,7 @@ export default [
   },
   {
     year: 2021,
-    text: "Running more than 90 Cisco Blades, 500TB High Performance Storage, plenty of PaloAlto and Cisco Firewalls, Secure SIP Channels with DEH at our Vocus VSYD2 Data Centers.",
+    text: "Running more than 90 Cisco Blades, 500TB High Performance Storage, plenty of PaloAlto and Cisco Firewalls, Secure SIP Channels with DEH at our Vocus VSYD2 Data Center.",
     rotate: 3,
     color: "red.500"
   },
