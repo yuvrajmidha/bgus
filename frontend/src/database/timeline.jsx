@@ -13,7 +13,7 @@ export default [
   },
   {
     year: 2022,
-    text: "Highly Reduntant SIPaaS with 3000+ PREMIUM SIP Channels. The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.",
+    text: "Highly Reduntant SIPaaS with 3000+ PREMIUM SIP Channels with Vocus Communications. The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.",
     rotate: -2,
     color: "teal.500"
   },
@@ -25,7 +25,7 @@ export default [
   },
   {
     year: 2021,
-    text: "Running more than 90 Cisco Blades, 500TB High Performance Storage, plenty of PaloAlto and Cisco Firewalls, Secure SIP Channels with DEH.",
+    text: "Running more than 90 Cisco Blades, 500TB High Performance Storage, plenty of PaloAlto and Cisco Firewalls, Secure SIP Channels with DEH at our Vocus VSYD2 Data Centers.",
     rotate: 3,
     color: "red.500"
   },
