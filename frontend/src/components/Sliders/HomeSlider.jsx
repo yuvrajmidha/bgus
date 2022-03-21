@@ -9,8 +9,8 @@ import { FaArrowLeft, FaArrowRight, FaChevronRight } from 'react-icons/fa';
 
 const sliderInfo = [
     {
-      title: <span><Text fontSize={"26px"} color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a reality</span>,
-      imgSrc: "/assets/images/backgrounds/bgus_slide 1.jpg",
+      title: <span><Text fontSize={"20px"} textTransform="uppercase" color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a reality</span>,
+      imgSrc: "/assets/videos/flyover.gif",
       subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
@@ -21,7 +21,7 @@ const sliderInfo = [
     },
     {
       title: "Launched our services in India",
-      imgSrc: "/assets/images/backgrounds/bgus_slide 2.jpg",
+      imgSrc: "/assets/videos/india.gif",
       subTitle: "Things are moving very fast in India and Singapore. We anticipate having 2 racks in each POP in the next 6-12 months.",
       btnPrimaryText: "Read More",
       btnSecondaryText: "Get a quote",
@@ -50,7 +50,7 @@ const sliderInfo = [
     // },
     {
       title: "Cybersecurity meets Artificial Intelligence",
-      imgSrc: "/assets/images/backgrounds/bgus_slide 3.jpg",
+      imgSrc: "/assets/videos/ai.gif",
       subTitle: <span>Something coming in the next few months which will be one of the best as a service offering of BG Unified Solutions in the AI - Artificial Intelligence space.</span>,
       btnSecondaryText: "Read More",
       btnSecondaryLink: "/newsroom/BG-Unified-Solutions-and-Forcepoint-in-AI-Space",
@@ -187,21 +187,21 @@ function main(props) {
     return (
         <div>
               
-            <Box pos="relative" bg="dark.500" height={["440px","520px","720px"]}>
+            <Box pos="relative" bg="dark.500" height={["440px","520px","600px"]}>
                 {sliderInfo.map((slide, index) => 
-                  {return slide.video === true ? <Box pos="absolute" key={index} top={0} left={0} opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} width="100%">
+                  {return slide.video === true ? <Box pos="absolute" key={index} top={0} left={0} opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","640px"]} width="100%">
                           <video width="100%" height="100%" autoplay muted>
                             <source src="/assets/videos/uptime.mp4" type="video/mp4" />
                           </video>
                        </Box> : 
-                       <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","720px"]} filter={slide.filter} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
+                       <Image key={index} src={slide.imgSrc} transition="1s" opacity={animate % sliderInfo.length === index ? "1" : "0"}  height={["440px","520px","600px"]} filter={slide.filter} objectFit="cover" pos="absolute" top={0} left={0} width="100%"></Image>
                   })}
 
                   {/* {<Image transition="1s" opacity={sliderInfo[animate]?.divider === true ? "1" : "0"} src={"/assets/images/dividers/divider_triangle.svg"}  objectFit="cover" pos="absolute" bottom={"-1px"} left={0} width="100%"></Image>} */}
                 
                 {/* <Box top={0} left={0} opacity={.7} pos="absolute" width="100%" height="100%" bg="black"></Box> */}
-                <Section  pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0} mt={[0,0,0,"-56px","-32px"]}>
-                <Flex my={0}>
+                <Section pos="absolute" left={0} color="white" width="100%" height="100%" px={8} py={0} my={0}>
+                <Flex alignItems={"center"} my={0}>
                   <Box display={["none","none","block"]} pos="relative" minW="180px" color="white">
                   {sliderInfo.map((slide, index) =>
                     <Box key={index} p={3}>

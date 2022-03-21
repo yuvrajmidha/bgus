@@ -1,4 +1,35 @@
-export default [{
+export default [
+  {
+    year: 2022,
+    text: "BGUS launched services in India and Singapore. We anticipate having 2 racks in each POP in the next 6-12 months.",
+    rotate: 1,
+    color: "yellow.400"
+  },
+  {
+    year: 2022,
+    text: "Point of presence at state of the art Data center by Tata Communication Limited located right in the heart of India, GK 1, New Delhi",
+    rotate: 2,
+    color: "purple.500"
+  },
+  {
+    year: 2022,
+    text: "Highly Reduntant SIPaaS with 3000+ PREMIUM SIP Channels. The solution comprises of DUAL EXCHANGE HOMING with multiple SBC's across each DC location.",
+    rotate: -2,
+    color: "teal.500"
+  },
+  {
+    year: 2021,
+    text: "BGUS is now a Seagate Technology DIAMOND Partner and is going through the process of including Seagate Technology Systems for business-critical backups.",
+    rotate: 3,
+    color: "red.500"
+  },
+  {
+    year: 2021,
+    text: "Running more than 90 Cisco Blades, 500TB High Performance Storage, plenty of PaloAlto and Cisco Firewalls, Secure SIP Channels with DEH.",
+    rotate: 3,
+    color: "red.500"
+  },
+  {
     year: 2020,
     text: "BGUS expanding it's footprints by having it's Data center at AirTrunk Sydney, including 5 more racks",
     rotate: 3,
