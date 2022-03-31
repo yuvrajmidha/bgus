@@ -198,6 +198,17 @@ function about(){
                     driven by customer satisfaction and deliverability.
                   </Team>
                 </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Principal Solution Architect"
+                    name="Rhydian Giles"
+                    img="/assets/images/team/rhydian.jpg"
+                  >
+                    Highly accomplished technical visionary leader with record of leveraging in-depth 
+                    technical acumen to provide creative business solutions. Expert at facilitating 
+                    the stakeholders of business processes to increase enterprise-wide agility. 
+                  </Team>
+                </div>
                 
               </div>
               <div className="px-3 mt-4 text-left d-flex flex-column">
@@ -235,16 +246,68 @@ function about(){
                    An amazing manager with a solid understanding of operations management she ensures that the organization is adhering to its quality standards.
                   </Team>
                 </div>
-                {/* <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
                   <Team
-                    title="Lead Project "
-                    name="Yuvraj Midha"
-                    img="/assets/images/team/yuvraj.png"
+                    title="Audit Associate"
+                    name="Sonali Rana"
+                    img="/assets/images/team/sonali.png"
                   >
                    
-                   An amazing manager with a solid understanding of operations management she ensures that the organization is adhering to its quality standards.
+                   Creative, hard-working, and detail-oriented. Focused on deliverability and enhancing customer's experience.
                   </Team>
-                </div> */}
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Customer Service"
+                    name="Anuj Bora"
+                    img="/assets/images/team/anuj.png"
+                  >
+                   
+                   I strive to do best work in every possible manner and i am open to learning to perform even better to prove an asset for the organisation
+                  </Team>
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Senior Technical Support"
+                    name="Viplav Kumar"
+                    img="/assets/images/team/viplav.png"
+                  >
+                   
+                   Personable and knowledgeable IT support technician with over 6+ years of experience assisting customers with various software and hardware related issues.
+                  </Team>
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Audit Associate"
+                    name="Parvinder Singh Gaba"
+                    img="/assets/images/team/parvinder.png"
+                  >
+                   
+                   A BULATS Certified, IELTS Expert, Trained on ILT & CBT, Trainer’s Trainer who trained most of the professionals in English Language. Performed as a Sr. Manager (Quality). Commenced his career in 2007.
+                  </Team>
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Audit Associate"
+                    name="Ashesh Tokas"
+                    img="/assets/images/team/ashesh.png"
+                  >
+                   
+                   Doing Validation of Home and Content Claims
+                  </Team>
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
+                    title="Customer Care/Sales Executive"
+                    name="Ashu Vashisht"
+                    img="/assets/images/team/ashu.png"
+                  >
+                   
+                   Passionate and experienced IT support Customer Care/Sales Executive with over 7+ years of experience in handling customers by providing a one-stop-shop for their IT needs.
+                  </Team>
+                </div>
+            
+       
                 
               </div>
               <div className="row">

@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, Image, Button } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Image, Button, Divider } from "@chakra-ui/react";
 import Head from "next/head";
 import Fade from 'react-reveal/Fade';
 import Section from "../pageBuilder/Section";
@@ -22,14 +22,22 @@ function main() {
         </Box>
         <Section>
             <Row>
-                <Box width={["100%","100%","50%"]}>
+                <Box width={["100%","100%","50%"]} px={3}>
                 {TESTIMONIALS.map((story, index) => {
-                    if(index % 2 === 0) return Testimonial(story)
+                    if(index % 2 === 0) return <Box p={8} shadow="lg" rounded={"xl"}>
+                        {story.paragraph}
+                        <Heading fontFamily="Nexa Bold" mt={6} size="md">{story.author}</Heading>
+                        {story.CompanyName}
+                    </Box>
                 })}
                 </Box>
-                <Box width={["100%","100%","50%"]}>
+                <Box width={["100%","100%","50%"]} px={3}>
                 {TESTIMONIALS.map((story, index) => {
-                    if(index % 2 != 0) return Testimonial(story)
+                    if(index % 2 != 0) return <Box p={8} shadow="lg" rounded={"xl"}>
+                    {story.paragraph}
+                    <Heading fontFamily="Nexa Bold" mt={6} size="md">{story.author}</Heading>
+                    {story.CompanyName}
+                </Box>
                 })}
                 </Box>
             </Row>

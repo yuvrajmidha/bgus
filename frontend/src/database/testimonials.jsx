@@ -45,17 +45,6 @@ export default [
         designation: "Associate Director",
         emoji: ""
     },
-    
-    {
-        author: "Nicholas Falloon",
-        imageUrl: "assets/images/brands/telstra.png",
-        imageAlt: "Company Logo",
-        paragraph: "I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
-        CompanyName: "Telstra",
-        designation: "Mobility Service Architec",
-        emoji: ""
-    },    
-    
     {
         imageUrl: "assets/images/brands/nsw_gov.png",
         author: "Jeremy Wood",
@@ -67,6 +56,16 @@ export default [
         designation: "Project Manager",
         emoji: ""
     },
+    {
+        author: "Nicholas Falloon",
+        imageUrl: "assets/images/brands/telstra.png",
+        imageAlt: "Company Logo",
+        paragraph: "I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
+        CompanyName: "Telstra",
+        designation: "Mobility Service Architec",
+        emoji: ""
+    },    
+ 
     {
         imageUrl: "assets/images/brands/optus.png",
         imageAlt: "Company Logo",
@@ -148,10 +147,138 @@ export default [
         imageUrl: "assets/images/brands/sabre_pacific.png",
         imageAlt: "Company Logo",
         author: "Munish Verma",
-        paragraph: "BG Unified Solutions worked together with our in-house engineers, whom we engaged to redesign our network. Saurabh was the engineer in-charge, who designed the whole solution to reduce the overall complexity and remove bottlenecks. They worked cohesively with our in-house team and brought great technical skills & expertise on Cisco switches, routers, firewalls, content switches, IPS etc. Throughout the project, their dedication was remarkable. They ensured that project is completed with minimum end-user impact and since all the implementations were performed in middle of night, they made themselves personally available for mid-night implementations and any post-implementation support. Would highly recommend their skills, expertise and professional services.",
+        paragraph: "BG Unified Solutions worked together with our in-house engineers, whom we engaged to redesign our network. Saurabh was the engineer in-charge, who designed the whole solution to reduce the overall complexity and remove bottlenecks. They worked cohesively with our in-house team and brought great technical skills & expertise on Cisco switches, routers, firewalls, content switches, IPS etc.",
         CompanyName: "Sabre Pacific Pty Ltd",
         designation: "Head of Technology Services",
         emoji: ""
     },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "Company Logo",
+        author: "Manish Jagasia",
+        paragraph: "`Can Do It` is the attitude this man wears all the time. Have work with Saurabh and the BG team over the years and he has never disappointed us. He has great commitment to his business and true customer centric approach. With a smile and a giggle he resolves complex issues which reflects the true knowledge and experience he carries behind his back. Great to deal with and work with. Keep up all the good work and all the best.",
+        CompanyName: "IITL Framework",
+        designation: "Services Operations",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "Company Logo",
+        author: "Sachin Agarwal",
+        paragraph: "Saurabh is one of those fellows who understands not only technical requirements but equally business requirements as well. His technical skills on F5 are second to none, he has always been my go-to-person when project is having tight deadline and work to be done without any compromise on quality. He is like Oracle of Infrasturcure, who knows everything. I haven't come across a subject in infrastructure where Saurabh hasn't proven himself. I will prefer to work with him again.",
+        CompanyName: "IT Security Consultant",
+        designation: "IT Security Consultant",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Karthick Vankayala",
+        paragraph: "Saurabh and I worked together for a major Identity platform project which provides SSO for Workforce Identity at Macquarie Group. Saurabh looked after the WAF component's development, configuration and automation thoroughly. He has a vast skill set in the Security space, his ideas and vision has always been awarded and appreciated by everyone in our team. He works in a friendly and flexible manner that helps in achieving great deliveries.",
+        CompanyName: "First Identity",
+        designation: "Director",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Dr Krishan Saluja",
+        paragraph: "Saurabh used to be an excellent student during his graduation. Even after so many years, I find the same energy, enthusiasm and passion for work in him. I am really pround of his achievements in the field of network technologies. I am really lucky to have Saurabh as my student. Since our fields are same, so I look forward to learn from him in this spell of life. With Best Wishes, Always",
+        CompanyName: "UIET, PU, Chandigarh",
+        designation: "Professor",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Rohit Gupta",
+        paragraph: "What an energetic, technically fit and hands-on business leader, you are a treat to work with mate. I am working with Sunny on a joint offering with Alibaba Cloud Zstack and am already blown away by the enthusiasm and knowledge he brings on to the table. Anyone looking to consume infra as a service (not just VMs), highly recommend to work with BGUS. Just sit back and relax - leave the heavy lifting to the BGUS team. ",
+        CompanyName: "Telstra Purple",
+        designation: "Enterprise Architecture",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "RajaBabu R Gorjala",
+        paragraph: "Sunny (Saurabh Sareen) is one of those rare breed of entrepreneur. Believes in himself, ventures with confident; as we say proof is in the pudding; BGU Solutions' achievements are reflections of Sunny's dedication. When I think of Sunny, I remember Colin Powell's words “There are no secrets to success. It is the result of preparation, hard work and learning from failure.”. Wishing Sunny and BGU a great success....",
+        CompanyName: "Consultel Group",
+        designation: "Senior BDM",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Sinran Singh Bagga",
+        paragraph: "Sunny is a very capable and reliable customer-first professional. His disposition is calm and joyful, despite challenges, and he infectiously inspires those around him to maintain a very high standard.For anyone with the opportunity to employ his expertise, sunny disposition and resourceful nature: I urge you to take it.",
+        CompanyName: "Australian Securities & Investment Commission",
+        designation: "SQL & NETAPP",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Julian Evans",
+        paragraph: "I worked with Saurabh briefly while scoping work for an upgrade to UCCX Premium. He quoted on this work with an impressive turn-around time and provided an in- depth analysis of our network topology to facilitate a more effective discussion on project possibilities. From the start, he showed a huge level of technical knowledge and enthusiasm and I hope to have the opportunity to work with him in the future. I would thoroughly recommend him.",
+        CompanyName: "Stockland",
+        designation: "Contact Center Manager",
+        emoji: ""
+    },
+   
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Anshu Singla",
+        paragraph: "Saurabh is really talented and hardworking. He is one of the most talented and intelligent guys i have ever met. I have seen him working days and nights to meet project",
+        CompanyName: "Easyy",
+        designation: "Founder",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Rayner Millard",
+        paragraph: "I worked with Saurabh closely whilst being his Account Manager at Ingram Micro. Saurabh has a dynamic & enthusiastic personality. He demonstrated an intense technical knowledge which was prevalent to his customers, and his ability to deliver was second to none. I highly recommend Saurabh.",
+        CompanyName: "Ingram Micro",
+        designation: "Account Manager",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Cristiano Paiva De Alarcao",
+        paragraph: "Saurabh is one of the most valuable people I have ever worked with. Precise employee. Honest professional with lots of knowledge in his field. It's an authentic pleasure working with him as he is a careful person.",
+        CompanyName: "Mesmeris",
+        designation: "AR/VR Senior Product Manager",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Darhsan Kalariya",
+        paragraph: "Sunny is very sincere and hardworking individual who strives to achieve his goals/targets by giving his best every time. He is always ready to help others and teach others.",
+        CompanyName: "Phase42",
+        designation: "System Administrator",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Runi Nielsen-Candido",
+        paragraph: "Sunny is the ultimate technical engineer with an attitude that ‘nothing is too hard’ with a focus that ‘an affordable high-quality solution will be found’. Sunny’s personal disposition is a true reflection of his nick name, and he is an absolute delight to work with. He never stops seeking improvement, in both himself and in delivery of solutions. He is a highly regarded and respected team member.",
+        CompanyName: "Micro Focus",
+        designation: "Client Principal, Professional Services",
+        emoji: ""
+    },
+    {
+        imageUrl: "assets/images/brands/sabre_pacific.png",
+        imageAlt: "",
+        author: "Brian Ruckley",
+        paragraph: "Sunny is a very practically oriented trainer. He develops and uses case studies that test and extend the student's knowledge of the subject matter being taught. Students regularly give Sunny outstanding evaluations",
+        CompanyName: "Thales Australia",
+        designation: "Technical Trainer",
+        emoji: ""
+    },
+
     
 ]
