@@ -46,6 +46,15 @@ export default [
         emoji: ""
     },
     {
+        author: "Nicholas Falloon",
+        imageUrl: "assets/images/brands/telstra.png",
+        imageAlt: "Company Logo",
+        paragraph: "I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
+        CompanyName: "Telstra",
+        designation: "Mobility Service Architec",
+        emoji: ""
+    },  
+    {
         imageUrl: "assets/images/brands/nsw_gov.png",
         author: "Jeremy Wood",
         imageAlt: "Company Logo",
@@ -56,16 +65,6 @@ export default [
         designation: "Project Manager",
         emoji: ""
     },
-    {
-        author: "Nicholas Falloon",
-        imageUrl: "assets/images/brands/telstra.png",
-        imageAlt: "Company Logo",
-        paragraph: "I worked with BGUS through a number of infrastructure refreshes, Telephony implementations and operational support roles. The teammates were always the deep technical go-to and SME for networks.",
-        CompanyName: "Telstra",
-        designation: "Mobility Service Architec",
-        emoji: ""
-    },    
- 
     {
         imageUrl: "assets/images/brands/optus.png",
         imageAlt: "Company Logo",
