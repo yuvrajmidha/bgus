@@ -35,7 +35,7 @@ const services = {
         title: "Backup As A Service",
         slogan: "Backup for your Digital System",
         category: "IT Infrastructural Services",
-        bgImage: "/assets/images/services/backup.jpg",
+        bgImage: "/assets/videos/backup.gif",
         icon: "/assets/images/icons/monotone/BackupAsAService.svg",
         color: "#0267C1",
         tags: ["backup"],

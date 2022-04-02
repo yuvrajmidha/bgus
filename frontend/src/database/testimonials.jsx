@@ -104,8 +104,7 @@ export default [
         As experts in different technologies, their focus is to provide competitive and affordable Unified Solutions to their clients.
         As BG Unified Solutions Business Development Manager with Dicker Data I have worked closely with Saurabh and his team and they consistently deliver competitive, efficient business solutions to their customers through increased agility, effective cost containment and lower risk.
         BG Unified Solutions provides national and international IT Services to some of Australia's leading companies, who use information technology to improve their business results.
-        I would be more than happy to recommend Saurabh and his team at BG Unified Solutions to any prospective organisation, as I know that they provide an extremely high level of customer care and support, along with experience in providing cost effective solutions utilising industry leading products and services from Cisco.
-        `,
+        I would be more than happy to recommend Saurabh and his team at BG Unified Solutions to any prospective organisation, as I know that they provide an extremely high level of customer care and support, along with experience in providing cost effective solutions utilising industry leading products and services from Cisco.`,
         CompanyName: "Dicker Data",
         designation: "Cisco Business Development Manager",
         emoji: ""

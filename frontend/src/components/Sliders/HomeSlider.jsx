@@ -32,7 +32,7 @@ const sliderInfo = [
     },
     {
       title: "Discover Data Storage Solutions built on Trust & Ease",
-      imgSrc: "/assets/images/backgrounds/bgus_slide 4.jpg",
+      imgSrc: "/assets/videos/backup.gif",
       subTitle: "BG Unified is proud to announce an executive partnership with Seagate, a technology leader for over 40 years.",
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",

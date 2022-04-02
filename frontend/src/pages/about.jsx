@@ -298,6 +298,15 @@ function about(){
                 </div>
                 <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
                   <Team
+                    title="Customer Service Associate"
+                    name="Chirag Sareen"
+                    img="/assets/images/team/chirag.jpg"
+                  >
+                   Working in this industry from more than 10 years now, Passionate about my work, that's always my priority.Few of my USP's are, quick learner, hard & a Smart worker, team player & a leader.
+                  </Team>
+                </div>
+                <div className="col-lg-8 offset-lg-2 offset-xl-0 col-xl-6">
+                  <Team
                     title="Customer Care/Sales Executive"
                     name="Ashu Vashisht"
                     img="/assets/images/team/ashu.png"
