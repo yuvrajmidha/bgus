@@ -2,7 +2,36 @@ import content from "../pageBuilder/pages/newsroom/index"
 import CarSideVideo from '../components/cards/CardSideVideo'
 
 const blogs = [
-
+    {
+        title: "BG Software Solutions India Private Limited - Our New Subsidiary",
+        headertitle: "BG Software Solutions India Private Limited - Our New Subsidiary",
+        headerIcon: "/assets/images/services/webdev.jpg",
+        description: "Today is when we are announcing BG Unified Solutions' other subsidiary - BG Software Solutions...",
+        date: "February 2022",
+        by: "Saurabh Sareen",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/services/webdev.jpg",
+        imgalt: "BG Software Solutions India Private Limited",
+        category: "Updates",
+        tags: ["Software", "Development", "SD-WAN", "BOTaaS", "DDOS", "BGUS", "WAFaaS", "VDOM", "VSYS", "Sareen", "infrastructure", "racks", "Network"],
+        link: "BG-Software-Solutions-India-Private-Limited",
+        content: content.bgssipt,
+    },
+    {
+        title: "BCPaaS - Business Continuity Plan As A Service",
+        headertitle: "BCPaaS - Business Continuity Plan As A Service",
+        headerIcon: "/assets/images/services/arch.jpg",
+        description: "From 1st April, we are introducing a brand new service - BCPaaS - Business Continuity Pla...",
+        date: "February 2022",
+        by: "Saurabh Sareen",
+        avatar: "/assets/images/team/saurabh.jpg",
+        image: "/assets/images/services/arch.jpg",
+        imgalt: " BG Unified Solutions and Forcepoint working collaboratively",
+        category: "Updates",
+        tags: ["Forcepoint", "SD-WAN", "BOTaaS", "DDOS", "BGUS", "WAFaaS", "VDOM", "VSYS", "Sareen", "infrastructure", "racks", "Network"],
+        link: "BG-Unified-Solutions-and-Forcepoint-working-collaboratively",
+        content: content.bcpaas,
+    },
     {
         title: "BG Unified Solutions and Forcepoint working collaboratively!",
         headertitle: " BG Unified Solutions and Forcepoint working collaboratively",

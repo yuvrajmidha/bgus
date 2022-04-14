@@ -51,3 +51,9 @@ module.exports.india = india
 
 import forcepoint from './forcepoint'
 module.exports.forcepoint = forcepoint
+
+import bgssipt from './bgssipt'
+module.exports.bgssipt = bgssipt
+
+import bcpaas from './bcpaas'
+module.exports.bcpaas = bcpaas

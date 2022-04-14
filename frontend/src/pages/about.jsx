@@ -280,7 +280,7 @@ function about(){
                   <Team
                     title="Audit Associate"
                     name="Parvinder Singh Gaba"
-                    img="/assets/images/team/parvinder.png"
+                    img="/assets/images/team/parvinder.jpg"
                   >
                    
                    A BULATS Certified, IELTS Expert, Trained on ILT & CBT, Trainer’s Trainer who trained most of the professionals in English Language. Performed as a Sr. Manager (Quality). Commenced his career in 2007.
@@ -309,7 +309,7 @@ function about(){
                   <Team
                     title="Customer Care/Sales Executive"
                     name="Ashu Vashisht"
-                    img="/assets/images/team/ashu.png"
+                    img="/assets/images/team/ashu.jpg"
                   >
                    
                    Passionate and experienced IT support Customer Care/Sales Executive with over 7+ years of experience in handling customers by providing a one-stop-shop for their IT needs.
