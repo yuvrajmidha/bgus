@@ -88,7 +88,7 @@ class Contact extends Component {
                         </Link>
                         <VStack color="gray.500" fontWeight={700} align={"start"} spacing={6}>
                           <Link href="tel:18003092487" variant={"link"} textAlign="left">
-                            <Text>1800 309 BGUS</Text>
+                            <Text>1800 309 2487</Text>
                           </Link>
                           <Link variant={"link"} textAlign="left">
                             <FaBuilding size="24px"/>
