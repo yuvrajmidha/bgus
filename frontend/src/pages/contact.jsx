@@ -67,7 +67,7 @@ class Contact extends Component {
           <Flex wrap="wrap">
             <Box px={4} width={{base: "100%", lg:"40%"}}>
                   <Box shadow="lg" bg="#fff" px={6} py={8} mb={4} borderWidth={0} rounded="lg">
-                        <Heading fontFamily={"Nexa Bold"}>Australlia</Heading>
+                        <Heading fontFamily={"Nexa Bold"}>Australia</Heading>
                         <Link color="gray.500" fontWeight={700} mt={4} href="mailto::support@bgunifiedsolutions.in" variant={"link"} textAlign="left">
                             <Text>support@bgunifiedsolutions.net</Text>
                         </Link>
