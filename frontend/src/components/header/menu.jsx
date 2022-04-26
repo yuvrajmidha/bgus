@@ -104,8 +104,8 @@ function menu(props) {
                 <Link href="/about#team">
                   <a className="link py-1">Team</a>
                 </Link>
-                <Link href="/stories">
-                  <a className="link py-1">Customer Stories</a>
+                <Link href="/career">
+                  <a className="link py-1">Career</a>
                 </Link>
                 <Link href="/trainings">
                   <a className="link py-1">Trainings</a>
@@ -119,6 +119,13 @@ function menu(props) {
               <Button className="btn-block btn my-2" mx={"-16px"} bg="white" py="24px">
                 <div className="d-flex justify-content-between align-items-center w-100">
                   <span className="display6">Our Features</span>
+                </div>
+              </Button>
+            </Link><br/>
+            <Link href="/stories">
+              <Button className="btn-block btn my-2" mx={"-16px"} bg="white" py="24px">
+                <div className="d-flex justify-content-between align-items-center w-100">
+                  <span className="display6">Customer Stories</span>
                 </div>
               </Button>
             </Link><br/>
