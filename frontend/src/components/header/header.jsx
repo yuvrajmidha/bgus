@@ -249,9 +249,9 @@ function header(props) {
                                                             </a></Hyperlink>
                                                         </Box>
                                                         <Box onClick={onClose} px={3} my={3} width="50%">
-                                                            <Hyperlink href="/stories"><a className="link">
-                                                                <Heading size="sm" fontFamily="Nexa Bold">Customer Stories</Heading>
-                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">The word out there!</Text>
+                                                            <Hyperlink href="/career"><a className="link">
+                                                                <Heading position={"relative"} size="sm" fontFamily="Nexa Bold">Career <Text pos={"absolute"} color="white" left="60px" top="-4px" bg="primary.500" padding={"4px 6px 2px 6px"} justifyContent={"center"} rounded={"8px"} fontSize={"12px"}>New</Text></Heading>
+                                                                <Text fontSize="sm" fontWeight="500" opacity=".7">We are hiring!</Text>
                                                             </a></Hyperlink>
                                                         </Box>
                                                         <Box onClick={onClose} px={3} my={3} width="50%">
@@ -292,6 +292,9 @@ function header(props) {
                             <Hyperlink href="/features">
                                 <Link display={["none", "none", "none", "flex"]} mx={3} fontWeight="500" fontSize="md" color="primary" _hover={{ color: "#ff0000", textDecoration: "none" }}>Our Features</Link>
                             </Hyperlink>
+                            <Hyperlink href="/stories">
+                                <Link display={["none", "none", "none", "flex"]} ml={2} fontWeight="500" fontSize="md" color="primary" _hover={{ color: "#ff0000", textDecoration: "none" }}>Customer Stories </Link>
+                            </Hyperlink>
                         </div>
                         <Hyperlink href="/"><a>
                             <Image alt="" src="/assets/logo.png" height="45px" className="mr-3 d-sm-none"></Image>
@@ -315,7 +318,7 @@ function header(props) {
                     </div>
                 </div>
 
-                <CookieNotice></CookieNotice>
+                {/* <CookieNotice></CookieNotice> */}
             </Box>
 
             {show ? <div className="overlay" onClick={overlayClick} /> : ""}

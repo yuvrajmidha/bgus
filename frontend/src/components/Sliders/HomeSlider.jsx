@@ -87,9 +87,10 @@ const sliderInfo = [
       filter: "brightness(.6);"
     },
     {
-      title: "SBSS university website running on our infrastructure",
-      imgSrc: "/assets/images/backgrounds/bgus_slide 8.jpg",
-      subTitle: <span>Shaheed Bhagat Singh State University Website running on BGUS' Infrastructures (IaaS). We promise to deliver 100% uptime.</span>,
+      title: " On its way: BG unified Software Solutions",
+      imgSrc: "/assets/images/backgrounds/hiring.jpeg",
+      subTitle: <span>We are going to have hardcore programmers on board with skills from C++, PHP, ASP.NET 
+      , .NET, C#, CSHARP, JS, JQUERY, and more, who will build all the softwares that BG Unified Solutions require including #SOCaaS, #CDRaaS, #LoggingaaS, #SYSLOG and more.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
