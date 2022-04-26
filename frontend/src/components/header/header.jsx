@@ -289,10 +289,11 @@ function header(props) {
                                 </Container>
                                 </Box>                                      
                                 </Box>
+                            <Link href="/stories" display={["none", "none", "none", "flex"]} ml={2} fontWeight="500" fontSize="md" color="primary" _hover={{ color: "#ff0000", textDecoration: "none" }}>Customer Stories </Link>
+
                             <Hyperlink href="/features">
                                 <Link display={["none", "none", "none", "flex"]} mx={3} fontWeight="500" fontSize="md" color="primary" _hover={{ color: "#ff0000", textDecoration: "none" }}>Our Features</Link>
                             </Hyperlink>
-                            <Link href="/stories" display={["none", "none", "none", "flex"]} ml={2} fontWeight="500" fontSize="md" color="primary" _hover={{ color: "#ff0000", textDecoration: "none" }}>Customer Stories </Link>
 
                         </div>
                         <Hyperlink href="/"><a>
