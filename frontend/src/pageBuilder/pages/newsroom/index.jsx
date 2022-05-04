@@ -57,3 +57,6 @@ module.exports.bgssipt = bgssipt
 
 import bcpaas from './bcpaas'
 module.exports.bcpaas = bcpaas
+
+import billing from './billing'
+module.exports.billing = billing

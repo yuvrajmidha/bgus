@@ -34,7 +34,7 @@ function features() {
             width: ["100%", "33%"],
             type: "numberCount",
             data: {
-              count: 1600,
+              count: 3000,
               suffix: "+",
               title: "SIP Channels"
             }            

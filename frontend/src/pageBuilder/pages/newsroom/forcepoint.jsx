@@ -14,12 +14,6 @@ export default [
                 text: <span>Rather than identifying known malware, Zero Trust CDR takes the data and extracts useful information from it. The extracted information is transformed into an intermediary format and verified. This advanced threat protection process makes sure no threats or attacks can reach the next stage. The original data is stored or discarded along with malware, known or unknown. Brand new data is then built in a normalized way, containing the verified information. The new data replicates the original data, without the threat of embedded malware and is now guaranteed safe.
                 </span>,
                 textAlign: "justify",
-                mb:"32px",
-            },
-            {
-                image:<Image justifySelf="center" rounded={"xl"} height={"400px"} width="100%" objectFit={"cover"} src="https://media-exp1.licdn.com/dms/image/C5622AQHhpF1R9lqHdA/feedshare-shrink_800/0/1644544777727?e=1649289600&v=beta&t=ut32JXmonGlN0vumhJjwVBU8PTVf7mlD6mBLxaf72Tc"/>,
-                imageJustify: "center",
-                
             },
             {
                 text:<span>A mind-blowing concept of Zero Trust CDR bundled with multi-layered firewall protection in addition to the F5 Web Application Firewall protection, what else a customer can expect from the service provider.
@@ -35,6 +29,6 @@ export default [
                 textAlign: "justify"
             },
             
-                   ]
+        ]
     }
 ]
