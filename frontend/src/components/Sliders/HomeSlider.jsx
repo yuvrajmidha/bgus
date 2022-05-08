@@ -87,7 +87,7 @@ const sliderInfo = [
       filter: "brightness(.6);"
     },
     {
-      title: " On its way: BG unified Software Solutions",
+      title: "On its way: BG Software Solutions",
       imgSrc: "/assets/images/backgrounds/hiring.jpeg",
       subTitle: <span>We are going to have hardcore programmers on board with skills from C++, PHP, ASP.NET 
       , .NET, C#, CSHARP, JS, JQUERY, and more, who will build all the softwares that BG Unified Solutions require including #SOCaaS, #CDRaaS, #LoggingaaS, #SYSLOG and more.</span>,

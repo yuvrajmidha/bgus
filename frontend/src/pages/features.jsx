@@ -43,7 +43,7 @@ function features() {
             width: ["100%", "33%"],
             type: "numberCount",
             data: {
-              count: 10000,
+              count: 14000,
               title: "Cores of CPU"
             }            
           },
@@ -51,8 +51,8 @@ function features() {
             width: ["100%", "33%"],
             type: "numberCount",
             data: {
-              count: 900,
-              suffix: "TB",
+              count: 5,
+              suffix: "PB+",
               title: "Storage"
             }            
           },
