@@ -11,7 +11,7 @@ const sliderInfo = [
     {
       title: <span><Text fontSize={"20px"} textTransform="uppercase" color="yellow.300" mb={3}>At BG Unified Solutions,</Text>Perfection is a reality</span>,
       imgSrc: "/assets/videos/flyover.gif",
-      subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">17520 Hours</b>.</span>,
+      subTitle: <span>Though we are not living in a perfect world, still we have maintained 100% uptime across all our services for the last <b className="text-underline">{`${Math.floor((Date.now() - 1582034400000)/(60 * 60 * 1000))}`} Hours</b>.</span>,
       btnPrimaryText: "Explore Now",
       btnSecondaryText: "Get a quote",
       btnPrimaryLink: "/solutions",
